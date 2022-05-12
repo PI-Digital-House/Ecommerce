@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: url("./img/background.png");
+}
+
+header {
+    height: 230px;
+}
