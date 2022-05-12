@@ -11,4 +11,46 @@ body {
 
 header {
     height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-bar {
+    height: 34px;
+    width: 426px;
+    background-color: white;
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.group-small-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.small-image {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+.product-image {
+    background-image: url("./img/71lX39tIsZL\ 1.png");
+    width: 520px;
+    height: 520px;
+}
+
+.product-details {
+    background-color: white;
+    width: 325px;
+    height: 520px;
 }
