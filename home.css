@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+}
+ body{
+    background: rgb(196,19,167);
+    background: linear-gradient(0deg, rgba(196,19,167,1) 0%, rgba(75,187,203,1) 100%);
+    height: 110vh;
+}
+.logo{
+    width: 63px;
+    height: 65px;
+    top: -2096px;
+    left: 877px;
+}
+#buscar{
+position: relative;
+display:block;
+width: 100%;
+font-size: 14px;
+cursor: pointer;
+color: rgb(2,2,2);
+background-color: rgba(230, 241, 240);
+line-height: 10px;
+width: 30rem;
+height: 3vh;
+}
+#botao{
+  font-size: 14px;
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background: 0 0;
+  border: none;
+  line-height: 1px;
+  width: auto;
+  height: 3vh;
+}
+
+
+ul, li{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+text-decoration: none;
+width: auto;
+}
+.carrossel{
+  width: auto;
+  height: 50vh;
+  background-color: black;
+ overflow: hidden;
+}
+.carrossel .fotos{
+  width: 500%;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+.carrosel .fotos img{
+  width: 19.9%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container {
+    padding: 2px 16px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 210px;
+    height: 160px;
+  }
+  .card img {
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    height: 130px;
+align-items: space-between;
+  } 
+#gallery {
+    display: inline-flex;
+    grid-template-columns: repeat(8, 2fr);
+    grid-template-rows: repeat(8, 3vw);
+    grid-gap: 15px;
+    display: flex;
+    padding: 10px;
+  }
+  #gallery2 {
+    display: inline-flex;
+    grid-template-columns: repeat(8, 2fr);
+    grid-template-rows: repeat(8, 3vw);
+    grid-gap: 15px;
+    display: flex;
+    padding: 10px;
+  }
