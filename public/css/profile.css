@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+
 }
 
 
@@ -10,9 +11,21 @@ header{
     height: 200px;
 }
 
+body{
+    background: rgb(196,19,167);
+    background: linear-gradient(0deg, rgba(196,19,167,1) 0%, rgba(75,187,203,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div{
+    background-color: white;
+    border: black 1px solid;
+    
+}
 .navigation{
     position: relative;
-    height: 500px;
+    height: 400px;
     width: 70px;
 
     background: #424242;
@@ -102,4 +115,44 @@ header{
     background: #424242;
     border-radius: 50%;
     box-shadow: 15px -15px 0 rgb(196,19,167);
+}
+
+
+.container-profile{
+    display: flex;
+
+    padding: 5px;
+    gap: 10px;
+
+    width: 100vw;
+}
+
+.bemvindo{
+    display: flex;
+}
+
+
+.main-profile{
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px;
+    gap: 5px;
+
+    width: 80%;
+}
+
+.pedido-status{
+    display: flex;
+    justify-content: space-around;
+}
+
+.endereco{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pedido-animacao{
+    display: flex;
+    gap: 10px;
 }
