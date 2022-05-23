@@ -3,10 +3,14 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
 }
 
 body {
-    background-image: url("./img/background.png");
+    background: linear-gradient(0deg, rgba(196,19,167,1) 0%, rgba(75,187,203,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    --image: url("../img/televisao_1.webp");
 }
 
 header {
@@ -27,6 +31,8 @@ header {
     align-items: flex-start;
     justify-content: center;
     gap: 15px;
+    margin-bottom: 100px;
+    max-height: 600px;
 }
 
 .group-small-images {
@@ -38,19 +44,138 @@ header {
 }
 
 .small-image {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-color: white;
 }
 
 .product-image {
-    background-image: url("./img/71lX39tIsZL\ 1.png");
-    width: 520px;
-    height: 520px;
+    background-color: white; 
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: 600px;
+    object-fit: contain;
+    padding: 50px;
 }
 
 .product-details {
     background-color: white;
-    width: 325px;
-    height: 520px;
+    width: 450px;
+    height: 600px;
+    border-radius: 15px;
+    margin-left: 50px;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 30px 18px 10px;
+}
+
+.product-details .stars {
+    margin-left: 20px;
+}
+
+.product-details .price {
+    margin: 10px 0 0 20px;
+}
+
+.product-details .product-description {
+    text-align: left;
+    margin: 50px 40px 0 20px;
+}
+
+.product-details .add-cart {
+    width: 232px;
+    height: 34px;
+    color: white;
+    background: #586889;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0;
+}
+
+.product-details .buy-now {
+    width: 232px;
+    height: 34px;
+    color: white;
+    background: #586889;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.line {
+    width: 1400px;
+    height: 0px;
+    border-bottom: 1px solid rgb(70, 70, 70);
+    margin: 40px auto;
+}
+
+/* .related {
+    background-color: white;
+} */
+
+.related-title {
+    font-size: 40px;
+    color: rgb(62, 62, 62);
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.related-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 30px;
+}
+
+.related-product {
+    display: flex;
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 15px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.related-product .related-text {
+    margin: auto;
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 15px;
+    min-width: 150px;
+}
+
+.related-product .related-image img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.image-1 img {
+    max-width: 100%;
+    height: 600px;
+    object-fit: contain;
+    margin-top: 100px;
 }
