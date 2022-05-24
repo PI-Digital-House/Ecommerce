@@ -10,7 +10,6 @@ body {
     background: linear-gradient(0deg, rgba(196,19,167,1) 0%, rgba(75,187,203,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    --image: url("../img/televisao_1.webp");
 }
 
 header {
@@ -53,6 +52,7 @@ header {
     background-color: white; 
     border-radius: 15px;
     overflow: hidden;
+    max-width: 800px;
 }
 
 .product-image img {
@@ -101,7 +101,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px auto 0;
+    margin: 100px auto 0;
 }
 
 .product-details .buy-now {
@@ -123,13 +123,9 @@ header {
     margin: 40px auto;
 }
 
-/* .related {
-    background-color: white;
-} */
-
 .related-title {
-    font-size: 40px;
-    color: rgb(62, 62, 62);
+    font-size: 30px;
+    color: black;
     text-align: center;
     padding: 30px 0px;
 }
@@ -147,7 +143,7 @@ header {
     width: 300px;
     height: 180px;
     background-color: white;
-    border: 1px solid rgb(70, 70, 70);
+    /* border: 1px solid rgb(70, 70, 70); */
     border-radius: 15px;
     overflow: hidden;
     justify-content: center;
@@ -173,9 +169,59 @@ header {
     justify-content: center;
 }
 
-.image-1 img {
+.img-1 {
     max-width: 100%;
     height: 600px;
     object-fit: contain;
     margin-top: 100px;
 }
+
+.ad-sub-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ad-text {
+    font-size: 20px;
+    text-align: center;
+    width: 700px;
+    margin: 30px auto 0;
+}
+
+.img-2 {
+    max-width: 100%;
+    height: 800px;
+    object-fit: contain;
+    margin-top: 100px;
+}
+
+.information-title {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.information-table {
+    border-spacing: 0;
+    width: 1400px;
+    margin: 30px auto;
+}
+
+.information-table td{
+    width: 50%;
+    vertical-align: middle;
+    /* border-bottom: 1px solid #ddd; */
+    font-size: 20px;
+    height: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    border-left: 1px solid rgb(66, 66, 66);
+}
+
+tr:nth-child(even) {background-color: #cdcdcd;}
+
+tr:nth-child(odd) {background-color: white;}
