@@ -4,10 +4,12 @@
     margin: 0;
     text-decoration: none;
     font-family: 'Libre Baskerville', serif;
+
+    --background: #fefefe;
 }
 
 body {
-    background: linear-gradient(0deg, rgba(196,19,167,1) 0%, rgba(75,187,203,1) 100%);
+    background-color: var(--background);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -27,9 +29,9 @@ header {
 
 .main {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    gap: 15px;
+    /* gap: 15px; */
     margin-bottom: 100px;
     max-height: 600px;
 }
@@ -46,6 +48,11 @@ header {
     width: 70px;
     height: 70px;
     background-color: white;
+    border: 1px solid rgb(70, 70, 70);
+}
+
+.small-image:hover {
+    border: 5px solid rgb(234, 114, 34);
 }
 
 .product-image {
@@ -53,23 +60,24 @@ header {
     border-radius: 15px;
     overflow: hidden;
     width: 800px;
-    /* min-width: 800px; */
+    /* border: 1px solid rgb(70, 70, 70); */
 }
 
 .product-image img {
     width: 100%;
     height: 600px;
     object-fit: contain;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .product-details {
     background-color: white;
     /* min-width: 450px; */
-    width: 450px;
+    width: 350px;
     height: 600px;
     border-radius: 15px;
-    margin-left: 50px;
+    border: 1px solid rgb(70, 70, 70);
+    /* margin-left: 50px; */
 }
 
 .product-name {
@@ -138,18 +146,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 150px;
     padding-bottom: 30px;
+    margin-top: 40px;
 }
 
 .related-product {
     display: flex;
-    width: 300px;
-    height: 180px;
+    flex-direction: column-reverse;
+    width: 150px;
     background-color: white;
     /* border: 1px solid rgb(70, 70, 70); */
     border-radius: 15px;
-    overflow: hidden;
+    /* overflow: hidden; */
     justify-content: center;
     align-items: center;
 }
@@ -213,7 +222,7 @@ header {
 .information-table {
     border-spacing: 0;
     width: 1400px;
-    margin: 30px auto;
+    margin: 30px auto 100px;
 }
 
 .information-table td{
@@ -223,10 +232,18 @@ header {
     font-size: 20px;
     height: 50px;
     padding-left: 20px;
-    border-bottom: 1px solid rgb(66, 66, 66);
-    border-left: 1px solid rgb(66, 66, 66);
+    border: 1px solid rgb(66, 66, 66);
 }
 
 tr:nth-child(even) {background-color: #cdcdcd;}
 
 tr:nth-child(odd) {background-color: white;}
+
+footer {
+    height: 300px;
+    background-color: #2b2b2b;
+    text-align: center;
+    line-height: 300px;
+    color: white;
+    font-size: 50px;
+}
