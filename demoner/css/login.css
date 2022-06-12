@@ -1,0 +1,72 @@
+header
+{
+    display: flex;
+    justify-content: center;
+    
+}
+section
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.input-contaniner
+{
+    width: 200px;
+    position: relative;
+}
+label
+{
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    transition: all 0.2s;
+    padding:  0 2px;
+    z-index: 1;
+    color: #2b2b2b;
+    user-select: none;
+}
+.text-input
+{
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border: 2px transparent #fefefe;
+    background: #fefefe;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+    color: #fefefe;
+}
+.label:before
+{
+    content: '';
+    height: 5px;
+
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+.text-input:focus
+{
+    border: 2px transparent #fefefe;
+}
+.text-input:focus + .label
+{
+    top: -10px;
+    color: #2b2b2b;
+    font-size: 18px;
+    text-shadow: 1.5px 1px 2px rgba(8, 8, 8, 0.493);
+}
+
+
+
+
+
+
