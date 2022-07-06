@@ -1,3 +1,15 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="pt-Br">
 
@@ -61,9 +73,9 @@
                <div>
                    <img src="/public/img/profile_ninja.png">
                </div>
-               <div>
-                  <span>Bem Vindo, Usuario</span><br>
-                  <span>Email</span> 
+               <div class="usuario-bv">
+                  <span>Bem Vindo, Usuario</span>
+                  <span><ion-icon name="mail-outline"></ion-icon>Email</span> 
                </div>
                
 
@@ -71,24 +83,50 @@
 
 
            <div>
-               <h4>SEU ULTIMO PEDIDO</h4>
+               <h4><ion-icon name="cart-outline"></ion-icon>SEU ULTIMO PEDIDO</h4>
            </div>
 
            <div class="pedido-status">
-               <div>
-                   <span>NÚMERO DO PEDIDO</span>
+               <div class="div-status">
+                   <div>
+                       <span>NÚMERO DO PEDIDO</span>
+                   </div>
+
+                   <div>
+                       <span>#1234</span>
+                   </div>
                </div>
 
-               <div>
-                   <span>STATUS</span>
+               <div class="div-status">
+                   <div>
+                       <span>STATUS</span>
+                   </div>
+                   
+                   <div>
+                     <span>Concluido</span>
+                  </div>
                </div>
 
-               <div>
-                   <span>DATA</span>
+               <div class="div-status">
+                   <div>
+                       <span>DATA</span>
+                    </div>
+
+                    <div>
+                        <span>10/10/2010</span>
+                    </div>
+                   
                </div>
 
-               <div>
-                   <span>PAGAMENTO</span>
+               <div class="div-status">
+                   <div>
+                       <span>PAGAMENTO</span>
+                   </div>
+
+                   <div>
+                    <span>cartão/Dinheiro</span>
+                   </div>
+                   
                </div>
            </div>
 
@@ -98,7 +136,7 @@
 
            <div class="endereco">
                
-               <div>
+               <div class="endereco-div">
                    <div>
                        <span>Endereço</span>
                    </div>

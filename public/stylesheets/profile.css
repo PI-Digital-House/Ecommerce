@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@600&family=Roboto:wght@500&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     text-decoration: none;
-
+    font-family: 'Libre Baskerville', serif;
 }
 
 
@@ -18,14 +20,14 @@ body{
     background-attachment: fixed;
 }
 
-div{
+/* div{
     background-color: white;
     border: black 1px solid;
     
-}
+} */
 .navigation{
     position: relative;
-    height: 400px;
+    height: 470px;
     width: 70px;
 
     background: #424242;
@@ -122,22 +124,30 @@ div{
     display: flex;
 
     padding: 5px;
-    gap: 10px;
+    gap: 20px;
 
     width: 100vw;
+
+    background: white;
 }
 
 .bemvindo{
     display: flex;
+    gap: 2%;
 }
 
+.usuario-bv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .main-profile{
     display: flex;
     flex-direction: column;
 
     margin: 10px;
-    gap: 5px;
+    gap: 15px;
 
     width: 80%;
 }
@@ -145,14 +155,39 @@ div{
 .pedido-status{
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid rgb(222, 224, 228);
+   
+}
+
+.div-status{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 .endereco{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
     display: flex;
-    justify-content: space-around;
+
+    gap: 50%;
+
 }
 
 .pedido-animacao{
+    margin-top: 15px;
     display: flex;
     gap: 10px;
+}
+
+.endereco-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rastreamento{
+    justify-content: center;
 }
