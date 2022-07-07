@@ -21,7 +21,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 //Banco de Dados
-db.sync(()=> console.log(`Banco de dados conectado: ${process.env.DB_NAME}`))
 
 
 app.use(logger('dev'));
