@@ -1,2 +1,0 @@
-#!/bin/bash
-npx sequelize model:generate --name Customer --attributes id:INTEGER,name:STRING,lastName:STRING,email:STRING,password:STRING,phone:STRING,birthDay:STRING,addresId:INTEGER,ohId:INTEGER,cpf:STRING
