@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  mysqlsrv:
+    image: mysql
+    environment:
+      MYSQL_USER: "user"
+      MYSQL_ROOT_PASSWORD: "root123"
+      MYSQL_DATABASE: "PI"
+    ports:
+      - "3306:3306"
+    volumes:
+      - D:\Docker\Mysql\docker-compose.yml
+    networks:
+      - mysql-compose-network
+
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+    networks:
+      - mysql-compose-network
+
+networks:
+  mysql-compose-network:
+    driver: bridge
