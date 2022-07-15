@@ -1,23 +1,17 @@
 version: '3'
 
 services:
-  mysqlsrv:
+  database:
+    container_name: "PI_DB"
     image: mysql
     environment:
-      MYSQL_USER: "user"
-      MYSQL_ROOT_PASSWORD: "root123"
-      MYSQL_DATABASE: "PI"
+      MYSQL_USER: "wave"
+      MYSQL_DATABASE: "pi"
+      MYSQL_ROOT_PASSWORD:
     ports:
       - "3306:3306"
     volumes:
-      - D:\Docker\Mysql\docker-compose.yml
-    networks:
-      - mysql-compose-network
-
-  adminer:
-    image: adminer
-    ports:
-      - 8080:8080
+      - D:\Digital House\P.I
     networks:
       - mysql-compose-network
 
