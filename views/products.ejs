@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/stylesheets/products.css">
+    <link rel="stylesheet" href="../stylesheets/products.css">
     <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
-    <title>Pedro</title>
+    <title><%= title %></title>
 </head>
 <body>
 
@@ -21,25 +21,29 @@
 
     <div class="main">
         <div class="group-small-images">
-            <div class="small-image s-i-1"></div>
-            <div class="small-image s-i-2"></div>
-            <div class="small-image s-i-3"></div>
-            <div class="small-image s-i-4"></div>
+            <!-- <div class="small-image s-i-1"></div>
+            <div class="small-image s-i-2"></div> -->
+            <div class="small-image" id="s-i-3">
+                <img src="../img/products/televisao_3.webp" alt="">
+            </div>
+            <div class="small-image" id="s-i-4">
+                <img src="../img/products/televisao_4.png" alt="">
+            </div>
         </div>
 
         <div class="product-image">
-            <img src = "../public/img/products/televisao_4.png" alt="">
+            <img src = "../img/products/televisao_4.png" id="image-test" alt="">
         </div>
 
         <div class="product-details">
             <div class="product-details-top">
                 <h2 class="product-name">Kindle</h2>
                 <div class="stars">
-                    <img src="../public/img/products/Star 1.svg" alt="star" class="star">
-                    <img src="../public/img/products/Star 1.svg" alt="star" class="star">
-                    <img src="../public/img/products/Star 1.svg" alt="star" class="star">
-                    <img src="../public/img/products/Star 1.svg" alt="star" class="star">
-                    <img src="../public/img/products/Star 1.svg" alt="star" class="star">
+                    <img src="../img/products/Star 1.svg" alt="star" class="star">
+                    <img src="../img/products/Star 1.svg" alt="star" class="star">
+                    <img src="../img/products/Star 1.svg" alt="star" class="star">
+                    <img src="../img/products/Star 1.svg" alt="star" class="star">
+                    <img src="../img/products/Star 1.svg" alt="star" class="star">
                 </div>
     
                 <p class="price">R$600,00</p>
@@ -63,25 +67,25 @@
             <div class="related-product">
                 <p class="related-text">Capa Nupro para Novo Kindle Paperwhite (11ª geração - 2021) - Cor Preta.<br><br><strong>R$100,00</strong></p>
                 <div class="related-image">
-                    <img src="../public/img/products/televisao_3.webp" alt="related product 1">
+                    <img src="../img/products/televisao_3.webp" alt="related product 1">
                 </div>
             </div>
             <div class="related-product">
                 <p class="related-text">Capa de couro para Novo Kindle Paperwhite (11ª geração - 2021) - Cor Azul Marinho.<br><br><strong>R$100,00</strong></p>
                 <div class="related-image">
-                    <img src="../public/img/products/televisao_2.webp" alt="related product 1">
+                    <img src="../img/products/televisao_2.webp" alt="related product 1">
                 </div>
             </div>
             <div class="related-product">
                 <p class="related-text">Capa Nupro para Novo Kindle Paperwhite (11ª geração - 2021) - Cor Preta.<br><br><strong>R$100,00</strong></p>
                 <div class="related-image">
-                    <img src="../public/img/products/televisao_4.png" alt="related product 1">
+                    <img src="../img/products/televisao_4.png" alt="related product 1">
                 </div>
             </div>
             <div class="related-product">
                 <p class="related-text">Capa de couro para Novo Kindle Paperwhite (11ª geração - 2021) - Cor Azul Marinho.<br><br><strong>R$100,00</strong></p>
                 <div class="related-image">
-                    <img src="../public/img/products/televisao_1.webp" alt="related product 1">
+                    <img src="../img/products/televisao_1.webp" alt="related product 1">
                 </div>
             </div>
         </div>
@@ -89,12 +93,12 @@
 
     <div class="product-ads">
         <div class="image-1">
-            <img src="../public/img/products/product_image_1.jpg" alt="" class="img-1">
+            <img src="../img/products/product_image_1.jpg" alt="" class="img-1">
         </div>
         <h2 class="ad-sub-title">Com menos peso, viaje mais longe</h2>
         <p class="ad-text">O Kindle Paperwhite é fino, leve e fácil de transportar para que você possa aproveitar seus livros favoritos a qualquer momento. Apresenta nossa característica tela antirreflexo de 300 ppi, agora com 10% mais brilho em sua configuração máxima, para que você possa ler em qualquer luz. E agora, uma única recarga de bateria via USB-C dura até 10 semanas. A duração da bateria pode variar dependendo do uso.</p>
         <div class="image-1">
-            <img src="../public/img/products/product_image_4.jfif" alt="" class="img-2">
+            <img src="../img/products/product_image_4.jfif" alt="" class="img-2">
         </div>
     </div>
 
@@ -142,7 +146,7 @@
     </table>
 
     <footer>
-        <img src="../public/img/products/1647270769071.jfif" alt="">
+        <img src="../img/products/1647270769071.jfif" alt="">
         <div class="info">
             <span>DH - Digital House</span>
             <span>Av. Domingos Odália Filho, 301, Osasco - SP</span>
@@ -160,6 +164,7 @@
             </div>
         </div>
     </footer>
+    <script src="../script/products.js"></script>
 
 </body>
 </html>
