@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class address extends Model {
+  class Address extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,10 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Address.hasOne(models.Customers, {
+        foreignKey:'addressId',
+        as:'address'
+      })
     }
   }
-  address.init({
-    id: DataTypes.INTEGER,
+  Address.init({
     address: DataTypes.STRING,
     complementary: DataTypes.STRING,
     neighborhood: DataTypes.STRING,
@@ -24,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
     referencePoint: DataTypes.STRING
   }, {
     sequelize,
-    modelName: 'address',
+    modelName: 'Address',
   });
-  return address;
+  return Address;
 };

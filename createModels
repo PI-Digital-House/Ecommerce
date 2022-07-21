@@ -1,13 +1,16 @@
 #!/bin/bash
 
 # Create model Customer
-npx sequelize model:generate --name Customer --attributes id:INTEGER,name:STRING,lastName:STRING,email:STRING,password:STRING,phone:STRING,birthDay:STRING,addresId:INTEGER,ohId:INTEGER,cpf:STRING
+npx sequelize model:generate --name Customer --attributes name:STRING,lastName:STRING,email:STRING,password:STRING,phone:STRING,birthDay:STRING,addressId:INTEGER,cpf:STRING
 
 # Create model Credit Card
-npx sequelize model:generate --name creditCard --attributes numberCard:INTEGER,expDate:STRING,cvv:INTEGER,nameCard:STRING,cpf:STRING,id:INTEGER
+npx sequelize model:generate --name CreditCard --attributes numberCard:INTEGER,expDate:STRING,cvv:INTEGER,nameCard:STRING,cpf:STRING
 
 # Create model Address
-npx sequelize model:generate --name address --attributes  id:INTEGER,address:STRING,complementary:STRING,neighborhood:STRING,city:STRING,state:STRING,cep:STRING,referencePoint:STRING
+npx sequelize model:generate --name Address --attributes address:STRING,complementary:STRING,neighborhood:STRING,city:STRING,state:STRING,cep:STRING,referencePoint:STRING
 
 # Create model Payment
-npx sequelize model:generate --name payment --attributes id:INTEGER,pix:INTEGER,ticket:INTEGER,card:INTEGER,bitcoin:INTEGER
+npx sequelize model:generate --name Payment --attributes pix:INTEGER,ticket:INTEGER,card:INTEGER
+
+#Crate model finishPurchase
+npx sequelize model:generate --name FPurchase --attributes customerId:INTEGER,addresId:INTEGER,paymentId:INTEGER
