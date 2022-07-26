@@ -1,16 +1,22 @@
 #!/bin/bash
 
 # Create model Customer
-npx sequelize model:generate --name Customer --attributes name:STRING,lastName:STRING,email:STRING,password:STRING,phone:STRING,birthDay:STRING,addressId:INTEGER,cpf:STRING
+npx sequelize model:generate --name Customer --attributes customerId:STRING/INTEGER name:STRING,lastName:STRING,email:STRING,password:STRING,phone:STRING,birthDay:STRING,cpf:STRING,address:STRING,complementary:STRING,neighborhood:STRING,city:STRING,state:STRING,cep:STRING,referencePoint:STRING
 
 # Create model Credit Card
-npx sequelize model:generate --name CreditCard --attributes numberCard:INTEGER,expDate:STRING,cvv:INTEGER,nameCard:STRING,cpf:STRING
+# npx sequelize model:generate --name CreditCard --attributes numberCard:INTEGER,expDate:STRING,cvv:INTEGER,nameCard:STRING,cpf:STRING
 
-# Create model Address
-npx sequelize model:generate --name Address --attributes address:STRING,complementary:STRING,neighborhood:STRING,city:STRING,state:STRING,cep:STRING,referencePoint:STRING
+# Create Category
+npx sequelize model:generate --name Category --attributes categoryId:STRING,categoryName:STRING,
 
-# Create model Payment
-npx sequelize model:generate --name Payment --attributes pix:INTEGER,ticket:INTEGER,card:INTEGER
+# Create Product
+npx sequelize model:generate --name Product --attributes productId:STRING,productName:STRING,brandId:STRING,categoryId:STRING,modelYear:INTEGER,listPrice:INTEGER
 
-#Crate model finishPurchase
-npx sequelize model:generate --name FPurchase --attributes customerId:INTEGER,addresId:INTEGER,paymentId:INTEGER
+# Create Stocks
+npx sequelize model:generate --name Stocks --attributes storeId:INTEGER,productId:STRING,quantity:INTEGER
+
+# Create Brand
+npx sequelize model:generate --name Brands --attributes brandId:STRING,brandName:STRING
+
+# Create Orders
+npx sequelize model:generate --name Order --attributes orderId:STRING/INTEGER,customerId:STRING/INTEGER,orderStatus:STRING,orderDate:INTEGER,requeriDate:INTEGER,shippedDate:INTEGER,storeId:INTEGER/STRING
