@@ -1,26 +1,14 @@
 'use strict';
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('CreditCards', {
+    await queryInterface.createTable('Payments', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      numberCard: {
-        type: Sequelize.INTEGER
-      },
-      expDate: {
-        type: Sequelize.STRING
-      },
-      cvv: {
-        type: Sequelize.INTEGER
-      },
-      nameCard: {
-        type: Sequelize.STRING
-      },
-      cpf: {
+      paymentName: {
         type: Sequelize.STRING
       },
       createdAt: {
@@ -34,6 +22,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('CreditCards');
+    await queryInterface.dropTable('Payments');
   }
 };

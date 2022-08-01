@@ -18,7 +18,8 @@ module.exports = (sequelize, DataTypes) => {
     expDate: DataTypes.STRING,
     cvv: DataTypes.INTEGER,
     nameCard: DataTypes.STRING,
-    cpf: DataTypes.STRING
+    cpf: DataTypes.STRING,
+    customerId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'CreditCard',
