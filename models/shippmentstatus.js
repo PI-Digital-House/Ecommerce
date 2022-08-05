@@ -19,5 +19,12 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'ShippmentStatus',
   });
+
+  ShippmentStatus.associate = function(models){
+    ShippmentStatus.belongsTo(models.Order,{
+      foreignKey:'statusShippId'
+    })
+
+  }
   return ShippmentStatus;
 };

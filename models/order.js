@@ -25,5 +25,25 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Order',
   });
+
+  Order.associate = function(models){
+    Order.hasMany(models.Customer)
+  }
+
+  Order.associate = function(models){
+    Order.hasMany(models.Payment)
+  }
+
+  Order.associate = function(models){
+    Order.hasMany(models.Product)
+  }
+
+  Order.associate = function(models){
+    Order.hasMany(models.OrderStatus)
+  }
+
+  Order.associate = function(models){
+    Order.hasMany(models.ShippmentStatus)
+  }
   return Order;
 };

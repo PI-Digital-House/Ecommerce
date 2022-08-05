@@ -24,5 +24,9 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'CreditCard',
   });
+
+  CreditCard.associate = function(models){
+    CreditCard.hasMany(models.Customer)
+  }
   return CreditCard;
 };

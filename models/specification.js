@@ -25,5 +25,11 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Specification',
   });
+
+  Specification.associate = function(models){
+    Specification.belongsTo(models.Product,{
+      foreignKey:'specificationId'
+    })
+  }
   return Specification;
 };

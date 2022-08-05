@@ -9,14 +9,14 @@ npx sequelize model:generate --name CreditCard --attributes numberCard:INTEGER,e
 # Create model Category
 npx sequelize model:generate --name Category --attributes name:STRING
 
-# Create model Product
-npx sequelize model:generate --name Product --attributes name:STRING,price:INTEGER,categoryId:INTEGER,brandID:INTEGER,specificationId:INTEGER,amount:INTEGER
-
 # Create model Specification
 npx sequelize model:generate --name Specification --attributes productId:INTEGER,weight:FLOAT,size:FLOAT,model:STRING,description:TEXT,color:STRING,follow:TEXT
 
 # Create model Brand
 npx sequelize model:generate --name Brand --attributes brandName:STRING
+
+# Create model Product
+npx sequelize model:generate --name Product --attributes name:STRING,price:INTEGER,categoryId:INTEGER,brandID:INTEGER,specificationId:INTEGER,amount:INTEGER
 
 # Create model Order Status
 npx sequelize model:generate --name OrderStatus --attributes statusName:STRING

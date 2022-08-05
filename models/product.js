@@ -24,9 +24,26 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Product',
   });
+
   Product.associate = function(models){
     Product.hasMany(models.Category)
-
   }
+
+  Product.associate = function(models){
+    Product.hasMany(models.Specification)
+  }
+  Product.associate = function(models){
+    Product.hasMany(models.Brand)
+  }
+
+  Product.associate = function(models){
+    Product.belongsTo (models.Order,{
+      foreignKey:'productId'
+    })
+  }
+
+
+
+
   return Product;
 };

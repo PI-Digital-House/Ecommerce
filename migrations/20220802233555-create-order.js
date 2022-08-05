@@ -12,22 +12,47 @@ module.exports = {
         type: Sequelize.STRING
       },
       customerId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull:false,
+        references:{
+          model:'Customers',
+          key:'id'
+        }
       },
       paymentId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull:false,
+        references:{
+          model:'Payments',
+          key:'id'
+        }
       },
       productId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull:false,
+        references:{
+          model:'Products',
+          key:'id'
+        }
       },
       quantity: {
         type: Sequelize.INTEGER
       },
       statusId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull:false,
+        references:{
+          model:'OrderStatuses',
+          key:'id'
+        }
       },
       statusShippId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull:false,
+        references:{
+          model:'ShippmentStatuses',
+          key:'id'
+        }
       },
       createdAt: {
         allowNull: false,

@@ -19,5 +19,11 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Payment',
   });
+
+  Payment.associate = function(models){
+    Payment.belongsTo(models.Order,{
+      foreignKey:'paymentId'
+    })
+  }
   return Payment;
 };

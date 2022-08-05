@@ -19,5 +19,10 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Brand',
   });
+  Brand.associate = function(models){
+    Brand.belongsTo(models.Product,{
+      foreignKey:'brandID'
+    })
+  }
   return Brand;
 };

@@ -18,15 +18,25 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull:false,
         references:{
-          model:'Categories',
-          key:'id'
+          model: 'Categories',
+          key: 'id'
         }
       },
       brandID: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull:false,
+        references:{
+          model: 'Brands',
+          key: 'id'
+        }
       },
       specificationId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull:false,
+        references:{
+          model:'Specifications',
+          key:'id'
+        }
       },
       amount: {
         type: Sequelize.INTEGER

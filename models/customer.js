@@ -32,5 +32,16 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Customer',
   });
+  Customer.associate = function(models){
+    Customer.belongsTo(models.CreditCard,{
+      foreignKey:'customerId'
+    })
+
+    Customer.associate = function(models){
+      Customer.belongsTo(models.Order,{
+        foreignKey:'customerId'
+      })
+    }
+  }
   return Customer;
 };
