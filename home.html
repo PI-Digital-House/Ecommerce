@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="animation.css">
-    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
+    <title>Home</title>
 </head>
 <body>
 
@@ -18,27 +19,77 @@
 <li>
     <input id="buscar" type="text"  placeholder="Buscar..."/>
     <input id="botao" type="submit" value="Ir"/>
+    <label for="lupa" class="lupa">
+      <i class="fa-solid fa-magnifying-glass"></i>
+  </label>
 </li>
 <li>
-    <img src="img/user-regular-24 11.png" alt="usúario">
+  <i class="fa-solid fa-user"></i>
 </li>
 <li>
-    <img src="img/cart-regular-24 4.png" alt="carrinho">
+  <i class="fa-solid fa-cart-shopping"></i>
 </li>
-    </ul>
+<li>
+        <input type="checkbox" class="checkbox" id="btn">
+        <label id="chck" for="chck" class="label">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+     </label>
+     <div class='ball'></div>
+  </li>
+</ul>
 </nav>
     <main>
-    <section class='carrossel'>
-  <div class="fotos">
-    <img src="img/console 2.png" alt="">
-    <img src="img/teclado 2.png" alt="">
-    <img src="img/PS5 5.png" alt="">
-    <img src="img/tv 4.png" alt="">
-    <img src="img/console 2.png" alt="">
+<div class="slider">
+  <div class="slides">
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+
+  <div class="slide first">
+    <img src="./img/OFERTA DO DIA/3.png" alt="">
   </div>
-       </section>
+  <div class="slide">
+    <img src="./img/OFERTA DO DIA/4.png" alt="">
+  </div>
+  <div class="slide">
+    <img src="./img/OFERTA DO DIA/5.png" alt="">
+  </div>
+  <div class="slide">
+    <img src="./img/OFERTA DO DIA/6.png" alt="">
+  </div>
+  <div class="navigation-auto">
+    <div class="auto-btn1"></div>
+    <div class="auto-btn2"></div>
+    <div class="auto-btn3"></div>
+    <div class="auto-btn4"></div>
+  </div>
+</div>
+<div class="manual-navigation">
+  <label for="radio1" class="manual-btn"></label>
+  <label for="radio2" class="manual-btn"></label>
+  <label for="radio3" class="manual-btn"></label>
+  <label for="radio4" class="manual-btn"></label>
+</div>
+</div>
+
         <section id="gallery">
         <div class="card">
+            <img src="./img/console 2.png" alt="">
+            <div class="container">
+              <h4><b>Console Xbox Series S - branca</b></h4>
+              <p>100000btc</p>
+            </div>
+          </div>
+                  <div class="card">
+            <img src="./img/console 2.png" alt="">
+            <div class="container">
+              <h4><b>Console Xbox Series S - branca</b></h4>
+              <p>100000btc</p>
+            </div>
+          </div>
+          <div class="card">
             <img src="./img/console 2.png" alt="">
             <div class="container">
               <h4><b>Console Xbox Series S - branca</b></h4>
@@ -77,6 +128,20 @@
                 </div>
               </div>
               <div class="card">
+                <img src="./img/teclado 2.png" alt="">
+                <div class="container">
+                  <h4><b>Smartphone motorola</b></h4>
+                  <p>100000btc</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./img/teclado 2.png" alt="">
+                <div class="container">
+                  <h4><b>Smartphone motorola</b></h4>
+                  <p>100000btc</p>
+                </div>
+              </div>
+              <div class="card">
                 <img src="./img/PS5 5.png" alt="">
                 <div class="container">
                   <h4><b>Smartphone Samgung</b></h4>
@@ -99,5 +164,11 @@
                     </div>
             </section>
     </main>
+    <footer>
+      <div class="footer">
+
+      </div>
+    </footer>
+    <script src="home.js"></script>
 </body>
 </html>
