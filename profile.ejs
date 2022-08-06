@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./profile.css">
+    <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./profile.js" defer></script>
+    <title>profile</title>
+</head>
+    <nav>
+            <ul>
+                <li>
+                    <img src="img/Logo.png" id='logo' alt="Logo">
+                </li>
+                <li>
+                    <input id="buscar" type="text"  placeholder="Buscar..."/>
+                    <input id="botao" type="submit" value="Ir"/>
+                    <label for="lupa" class="lupa">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </label>
+                </li>
+                <li>
+                    <i class="fa-regular fa-user"></i>
+                </li>
+                <li>
+                    <i class="fa-regular fa-cart-shopping"></i>
+                </li>
+                </ul>
+    </nav> 
+    <main>
+               <div class="usuario-bv">
+                  <span><%= Bem Vindo, %></span><br>
+                  <span><ion-icon name="mail-outline"></ion-icon>Email</span> 
+               </div>
+
+           <div>
+               <h4>SEU ULTIMO PEDIDO</h4>
+               <h4><ion-icon name="cart-outline"></ion-icon>SEU ULTIMO PEDIDO</h4>
+           </div>
+
+           <div class="pedido-status">
+               <div>
+                   <span>NÚMERO DO PEDIDO</span>
+               <div class="div-status">
+                   <div>
+                       <span>SEU PEDIDO PEDIDO</span>
+                   </div>
+
+                   <div>
+                       <span></span>
+                   </div>
+               </div>
+
+               <div>
+                   <span><%= STATUS %></span>
+               <div class="div-status">
+                   <div>
+                       <span><%= STATUS %></span>
+                   </div>
+
+                   <div>
+                     <span>C<%= CONCLUIDO %></span>
+                  </div>
+               </div>
+
+               <div>
+                   <span><%= DATA %></span>
+               <div class="div-status">
+                   <div>
+                       <span><%= DATA %></span>
+                    </div>
+
+                    <div>
+                        <span><%= 10/10/2010 %></span>
+                    </div>
+
+               </div>
+
+               <div>
+                   <span><%= PAGAMENTO %></span>
+               <div class="div-status">
+                   <div>
+                       <span>PA<%= PAGAMENTO %></span>
+                   </div>
+
+                   <div>
+                    <span>c<%= cartão/dinheiro %></span>
+                   </div>
+
+               </div>
+           </div>
+
+                <h4>Endereço</h4>
+
+           <div class="endereco">
+
+               <div>
+               <div class="endereco-div">
+                   <div>
+                       <span><%= Endereço %></span>
+                   </div>
+     </main>
+ </body>
+ </html>
