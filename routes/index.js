@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/',(req, res)=> {
-  res.render('home')
+  res.render('prof_sac')
 });
 
 module.exports = router;
