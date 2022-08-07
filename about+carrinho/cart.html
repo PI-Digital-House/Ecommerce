@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./cart.css">
+    <title>Quem somos + Carrinho</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+    <li>
+        <img src="img/Logo.pg" alt="Logo">
+    </li>
+    <li>
+        <input id="buscar" type="text"  placeholder="Buscar..."/>
+        <input id="botao" type="submit" value="Ir"/>
+        <label for="lupa" class="lupa">
+          <i class="fa-solid fa-magnifying-glass"></i>
+      </label>
+    </li>
+    <li>
+        <img src="img/user-regular-24 11.png" alt="usúario">
+    </li>
+    <li>
+        <img src="img/cart-regular-24 4.png" id="cart-img" alt="carrinho">
+    </li>
+    <li>
+            <input type="checkbox" class="checkbox" id="btn">
+            <label id="chck" for="chck" class="label">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+         </label>
+         <div class='ball'></div>
+      </li>
+    </ul>
+    </nav>
+
+
+    <!-- Código do Carrinho -->
+
+    <div class="cart-container" id="cart-container">
+
+        <div class="cart" id="cart">
+            <div class="cart-header">
+                <i class="fa-solid fa-x" id="close-cart"></i>
+                <h1 class="cart-title">CARRINHO</h1>
+                <span></span>
+            </div>
+    
+            <hr>
+    
+            <div class="cart-body">
+                
+                <div class="cart-item">
+                    <div class="item-img">
+                        <img src="./1647270769071.jfif" alt="product image">    
+                    </div>
+                    <div class="item-info">
+                        <i class="fa-solid fa-x"></i>
+                        <span class="item-name">Nome do Produto</span>
+                        <span class="item-brand">Marca do Produto</span>
+                        <div class="item-options">
+                            <div class="item-quantity">
+                                <i class="fa-solid fa-circle-minus"></i>
+                                <input type="number" data-index="0">
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </div>
+                            <span class="item-price">R$ 100,00</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <hr>
+
+                <div class="cart-item">
+                    <div class="item-img">
+                        <img src="./1647270769071.jfif" alt="product image">    
+                    </div>
+                    <div class="item-info">
+                        <i class="fa-solid fa-x"></i>
+                        <span class="item-name">Nome do Produto</span>
+                        <span class="item-brand">Marca do Produto</span>
+                        <div class="item-options">
+                            <div class="item-quantity">
+                                <i class="fa-solid fa-circle-minus"></i>
+                                <input type="number" data-index="0">
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </div>
+                            <span class="item-price">R$ 100,00</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <hr>
+    
+            </div>
+
+            <div class="cart-footer">
+                <div class="total">
+                    <span>total a pagar</span>
+                    <span>R$ 100,00</span>
+                </div>
+                <span class="buy">fechar pedido</span>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Código do Carrinho -->
+
+
+
+    <h1 class="main-title" id="open-cart">Quem Somos Nós</h1>
+
+    <div class="card">
+        <img src="./pedro.jfif" alt="">
+        <div class="text">
+            <div class="title">
+                <h2 class="name">Pedro Pivatto</h2>
+                <h3 class="sub-name">Engenheiro Eletricista | Desenvolvedor de Software</h3>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quae eligendi repudiandae, cupiditate officia inventore consequatur non dolorum saepe expedita. Illum cupiditate sint dolores quod adipisci! Quod odio aperiam maiores?</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="card" id="card">
+        <div class="text" id="card2">
+            <div class="title">
+                <h2 class="name">Pedro Pivatto</h2>
+                <h3 class="sub-name">Engenheiro Eletricista | Desenvolvedor de Software</h3>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quae eligendi repudiandae, cupiditate officia inventore consequatur non dolorum saepe expedita. Illum cupiditate sint dolores quod adipisci! Quod odio aperiam maiores?</p>
+            <div class="social-media" id="social-media2">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <img src="./pedro.jfif" alt="">
+    </div>
+
+    <hr>
+
+    <div class="card">
+        <img src="./pedro.jfif" alt="">
+        <div class="text">
+            <div class="title">
+                <h2 class="name">Pedro Pivatto</h2>
+                <h3 class="sub-name">Engenheiro Eletricista | Desenvolvedor de Software</h3>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quae eligendi repudiandae, cupiditate officia inventore consequatur non dolorum saepe expedita. Illum cupiditate sint dolores quod adipisci! Quod odio aperiam maiores?</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="card" id="card">
+        <div class="text" id="card2">
+            <div class="title">
+                <h2 class="name">Pedro Pivatto</h2>
+                <h3 class="sub-name">Engenheiro Eletricista | Desenvolvedor de Software</h3>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quae eligendi repudiandae, cupiditate officia inventore consequatur non dolorum saepe expedita. Illum cupiditate sint dolores quod adipisci! Quod odio aperiam maiores?</p>
+            <div class="social-media" id="social-media2">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <img src="./pedro.jfif" alt="">
+    </div>
+
+    <hr>
+
+    <div class="card">
+        <img src="./pedro.jfif" alt="">
+        <div class="text">
+            <div class="title">
+                <h2 class="name">Pedro Pivatto</h2>
+                <h3 class="sub-name">Engenheiro Eletricista | Desenvolvedor de Software</h3>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quae eligendi repudiandae, cupiditate officia inventore consequatur non dolorum saepe expedita. Illum cupiditate sint dolores quod adipisci! Quod odio aperiam maiores?</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="./1647270769071.jfif" alt="">
+        <div class="info">
+            <span>DH - Digital House</span>
+            <span>Av. Domingos Odália Filho, 301, Osasco - SP</span>
+            <span>(11) 4858-4656</span>
+            <span>alunos@digitalhouse.com</span>
+        </div>
+
+        <div class="info" id="info">
+            <p>Quem somos nós</p>
+            <p>Nossas redes sociais:</p>
+            <div class="social_media">
+                <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-square fa-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./cart.js"></script>
+</body>
+</html>
