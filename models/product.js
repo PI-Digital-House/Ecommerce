@@ -26,18 +26,23 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Product.associate = function(models){
-    Product.hasMany(models.Category)
+    Product.belongsTo(models.Category,{
+      foreignKey:'categoryId'})
   }
 
   Product.associate = function(models){
-    Product.hasMany(models.Specification)
+    Product.belongsTo(models.Specification,{
+      foreignKey:'specificationId'
+    })
   }
   Product.associate = function(models){
-    Product.hasMany(models.Brand)
+    Product.belongsTo(models.Brand,{
+      foreignKey:'brandID'
+    })
   }
 
   Product.associate = function(models){
-    Product.belongsTo (models.Order,{
+    Product.hasMany (models.Order,{
       foreignKey:'productId'
     })
   }

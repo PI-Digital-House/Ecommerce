@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     modelName: 'OrderStatus',
   });
   OrderStatus.associate = function(models){
-    OrderStatus.belongsTo(models.Order,{
+    OrderStatus.hasMany(models.Order,{
       foreignKey:'statusId'
     })
   }

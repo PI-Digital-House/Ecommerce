@@ -26,7 +26,9 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   CreditCard.associate = function(models){
-    CreditCard.hasMany(models.Customer)
+    CreditCard.belongsTo(models.Customer,{
+      foreignKey:'customerId'
+    });
   }
   return CreditCard;
 };

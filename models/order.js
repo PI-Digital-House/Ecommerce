@@ -27,23 +27,33 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Order.associate = function(models){
-    Order.hasMany(models.Customer)
+    Order.belongsTo(models.Customer,{
+      foreignKey:'customerId'
+    })
   }
 
   Order.associate = function(models){
-    Order.hasMany(models.Payment)
+    Order.belongsTo(models.Payment,{
+      foreignKey:'paymentId'
+    })
   }
 
   Order.associate = function(models){
-    Order.hasMany(models.Product)
+    Order.belongsTo(models.Product,{
+      foreignKey:'productId'
+    })
   }
 
   Order.associate = function(models){
-    Order.hasMany(models.OrderStatus)
+    Order.belongsTo(models.OrderStatus,{
+      foreignKey:'statusId'
+    })
   }
 
   Order.associate = function(models){
-    Order.hasMany(models.ShippmentStatus)
+    Order.belongsTo(models.ShippmentStatus,{
+      foreignKey:'statusShippId'
+    })
   }
   return Order;
 };

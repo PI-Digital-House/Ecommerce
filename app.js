@@ -1,10 +1,12 @@
 const createError = require('http-errors');
 const express = require('express');
+const sequelize = require('sequelize')
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-// const customerRouter = require('./routes/customer')(sequelize);
+
+const customerRouter = require('./routes/customer');
 const usersRouter = require('./routes/users');
 
 
@@ -20,7 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/customer');
+app.use('/customer', customerRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

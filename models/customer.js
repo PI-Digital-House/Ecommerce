@@ -33,12 +33,12 @@ module.exports = (sequelize, DataTypes) => {
     modelName: 'Customer',
   });
   Customer.associate = function(models){
-    Customer.belongsTo(models.CreditCard,{
+    Customer.hasMany(models.CreditCard,{
       foreignKey:'customerId'
     })
 
     Customer.associate = function(models){
-      Customer.belongsTo(models.Order,{
+      Customer.hasMany(models.Order,{
         foreignKey:'customerId'
       })
     }
