@@ -5,7 +5,11 @@ const Brand = models.Brand
 
 
 module.exports ={
-    async index(req,res){
+    async index(req,res ){
+        const results =  await Customer.findAll();
+
+
+        return res.json(results)
 
     },
 
