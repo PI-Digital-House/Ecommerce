@@ -5,7 +5,7 @@ const OrderStatus = models.OrderStatus
 
 module.exports ={
     async index(req,res ){
-        const results =  await Customer.findAll();
+        const results =  await OrderStatus.findAll();
 
 
         return res.json(results)

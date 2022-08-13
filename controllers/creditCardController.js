@@ -1,11 +1,11 @@
 const sequelize = require('sequelize');
 const models = require('../models');
 const { index, update } = require('./customerController');
-const creditCard = models.CreditCard
+const CreditCard = models.CreditCard
 
 module.exports ={
     async index(req,res ){
-        const results =  await Customer.findAll();
+        const results =  await CreditCard.findAll();
 
 
         return res.json(results)

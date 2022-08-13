@@ -5,7 +5,7 @@ const Paymant = models.Paymant
 
 module.exports ={
     async index(req,res ){
-        const results =  await Customer.findAll();
+        const results =  await Paymant.findAll();
 
 
         return res.json(results)

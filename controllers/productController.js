@@ -5,7 +5,7 @@ const Product = models.Product
 
 module.exports ={
     async index(req,res ){
-        const results =  await Customer.findAll();
+        const results =  await Product.findAll();
 
 
         return res.json(results)

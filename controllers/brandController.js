@@ -6,7 +6,7 @@ const Brand = models.Brand
 
 module.exports ={
     async index(req,res ){
-        const results =  await Customer.findAll();
+        const results =  await Brand.findAll();
 
 
         return res.json(results)
@@ -14,10 +14,21 @@ module.exports ={
     },
 
     async create(req,res){
+        const {brand} = req.body
+
+        await Brand.create({brand})
+
+        return res.status(201).send();
+
+
 
     },
 
     async update(req,res){
+
+
+
+        return res.status(201).send();
 
     },
 

@@ -3,7 +3,11 @@ const models = require('../models')
 const Specification = models.Specification
 
 module.exports ={
-    async index(req,res){
+    async index(req,res ){
+        const results =  await ShippmentStatus.findAll();
+
+
+        return res.json(results)
 
     },
 

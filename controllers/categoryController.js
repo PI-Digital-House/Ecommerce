@@ -5,7 +5,7 @@ const Category = models.Category
 
 module.exports ={
     async index(req,res ){
-        const results =  await Customer.findAll();
+        const results =  await Category.findAll();
 
 
         return res.json(results)
