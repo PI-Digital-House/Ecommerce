@@ -13,6 +13,24 @@ module.exports ={
     },
 
     async create(req,res){
+        const{
+            numberCard,
+            expDate,
+            cvv,
+            nameCard,
+            cpf,
+            customerId} = req.body
+
+        await CreditCard.create({
+            numberCard,
+            expDate,
+            cvv,
+            nameCard,
+            cpf,
+            customerId
+        });
+
+        return res.status(201).send();
 
     },
 
@@ -21,6 +39,10 @@ module.exports ={
     },
 
     async delete(req,res){
-        
+        const {id} = req.params;
+
+        await CreditCard.destroy({where:{id}})
+
+        return res.status(201).send();
     }
 }

@@ -14,9 +14,9 @@ module.exports ={
     },
 
     async create(req,res){
-        const {brand} = req.body
+        const {brandName} = req.body
 
-        await Brand.create({brand})
+        await Brand.create({brandName})
 
         return res.status(201).send();
 
@@ -25,14 +25,22 @@ module.exports ={
     },
 
     async update(req,res){
+        const {id} = req.params
 
+        const {brandName} = req.body
 
+        await Brand.update({brandName},{where: {id}})
 
         return res.status(201).send();
 
     },
 
     async delete(req,res){
-        
+        const {id} = req.params;
+
+        await Brand.destroy({where:{id}})
+
+        return res.status(201).send();
+
     }
 }
