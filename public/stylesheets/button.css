@@ -9,9 +9,17 @@
     transition: box-shadow .6s ease;
 }
 
+.button-header{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.7rem;
+}
+
 .button.blue{
     background-color: #1FB6FF;
     border-radius: 4px;
+
+    
 }
 
 button.green{

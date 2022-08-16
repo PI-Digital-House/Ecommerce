@@ -7,6 +7,11 @@ const categoryController = require('../controllers/categoryController');
 const productController = require('../controllers/productController');
 const { route } = require('./customer');
 
+
+router.get('/', function(req, res, next) {
+    res.render('registerProducts.ejs', {title: "Cadastro"})
+});
+
 //Brand
 router.get('/brand', brandController.index);
 router.post('/brand', brandController.create);
