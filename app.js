@@ -1,19 +1,4 @@
 
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var homeRouter = require('./routes/home');
-var profileRouter = require('./routes/profile');
-var cartRouter = require('./routes/cart');
-var productsRouter = require('./routes/products')
-var signInRouter = require('./routes/signin')
-var signUpRouter = require('./routes/signup')
-var registerProducts = require('./routes/registerProducts')
 const createError = require('http-errors');
 const express = require('express');
 const sequelize = require('sequelize')
@@ -21,7 +6,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-
+//Importing Router
 const customerRouter = require('./routes/customer');
 const homeRouter = require('./routes/home')
 const admRouter = require('./routes/adm')
@@ -39,16 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/public')));
 
-
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/home', homeRouter);
-app.use('/profile', profileRouter);
-app.use('/cart', cartRouter);
-app.use('/products', productsRouter);
-app.use('/signin', signInRouter);
-app.use('/signup', signUpRouter);
-app.use('/registerProducts', registerProducts);
+//Routes
 app.use('/customer', customerRouter);
 app.use('/', homeRouter);
 app.use('/adm', admRouter);
