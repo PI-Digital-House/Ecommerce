@@ -14,19 +14,34 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Customer.init({
-    id: DataTypes.INTEGER,
     name: DataTypes.STRING,
     lastName: DataTypes.STRING,
     email: DataTypes.STRING,
     password: DataTypes.STRING,
     phone: DataTypes.STRING,
     birthDay: DataTypes.STRING,
-    addresId: DataTypes.INTEGER,
-    ohId: DataTypes.INTEGER,
-    cpf: DataTypes.STRING
+    cpf: DataTypes.STRING,
+    address: DataTypes.STRING,
+    complementary: DataTypes.STRING,
+    neighborhood: DataTypes.STRING,
+    city: DataTypes.STRING,
+    state: DataTypes.STRING,
+    cep: DataTypes.STRING,
+    referencePoint: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Customer',
   });
+  Customer.associate = function(models){
+    Customer.hasMany(models.CreditCard,{
+      foreignKey:'customerId'
+    })
+
+    Customer.associate = function(models){
+      Customer.hasMany(models.Order,{
+        foreignKey:'customerId'
+      })
+    }
+  }
   return Customer;
 };

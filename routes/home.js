@@ -1,9 +1,10 @@
-var express = require('express');
-var router = express.Router();
+const homeController = require('../controllers/homeController');
+const express = require('express');
+const router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('Pagina Home Funcionando');
-});
+
+router.get('/',homeController.index)
+
+
 
 module.exports = router;

@@ -1,3 +1,4 @@
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -13,8 +14,20 @@ var productsRouter = require('./routes/products')
 var signInRouter = require('./routes/signin')
 var signUpRouter = require('./routes/signup')
 var registerProducts = require('./routes/registerProducts')
+const createError = require('http-errors');
+const express = require('express');
+const sequelize = require('sequelize')
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 
-var app = express();
+
+const customerRouter = require('./routes/customer');
+const homeRouter = require('./routes/home')
+const admRouter = require('./routes/adm')
+
+
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,6 +39,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/public')));
 
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/home', homeRouter);
@@ -35,6 +49,14 @@ app.use('/products', productsRouter);
 app.use('/signin', signInRouter);
 app.use('/signup', signUpRouter);
 app.use('/registerProducts', registerProducts);
+app.use('/customer', customerRouter);
+app.use('/', homeRouter);
+app.use('/adm', admRouter);
+
+
+
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
