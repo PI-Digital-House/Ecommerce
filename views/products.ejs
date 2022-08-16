@@ -1,11 +1,170 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/products.css">
+    <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Logo</div>
+        <div class="search-bar"></div>
+        <div class="icons">O O O</div>
+    </header>
+
+    <div class="main">
+        <div class="group-small-images">
+            <!-- <div class="small-image s-i-1"></div>
+            <div class="small-image s-i-2"></div> -->
+            <div class="small-image" id="s-i-3">
+                <img src="../img/products/televisao_3.webp" alt="">
+            </div>
+            <div class="small-image" id="s-i-4">
+                <img src="../img/products/televisao_4.png" alt="">
+            </div>
+        </div>
+
+        <div class="product-image">
+            <img src = "../img/products/televisao_4.png" id="image-test" alt="">
+        </div>
+
+        <div class="product-details">
+            <div class="product-details-top">
+                <h2 class="product-name">Kindle</h2>
+                <div class="stars">
+                    <img src="../img/products/Star 1.svg" alt="star" class="star">
+                    <img src="../img/products/Star 1.svg" alt="star" class="star">
+                    <img src="../img/products/Star 1.svg" alt="star" class="star">
+                    <img src="../img/products/Star 1.svg" alt="star" class="star">
+                    <img src="../img/products/Star 1.svg" alt="star" class="star">
+                </div>
+    
+                <p class="price">R$600,00</p>
+            </div>
+
+            <p class="product-description">Novo Kindle Paperwhite: agora com tela de 6,8” e bordas mais finas, temperatura de luz ajustável, bateria com duração de até 10 semanas e 20% mais rápido para virar as páginas.</p>
+
+            <div class="product-details-buttons">
+                <div class="add-cart">Adicionar ao carrinho</div>
+                <div class="buy-now">Comprar agora</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="line"></div>
+
+    <div class="related">
+        <h2 class="related-title">Clientes também compraram esses produtos em Dispositivos</h2>
+        <div class="related-main">
+            <div class="related-product">
+                <p class="related-text">Capa Nupro para Novo Kindle Paperwhite (11ª geração - 2021) - Cor Preta.<br><br><strong>R$100,00</strong></p>
+                <div class="related-image">
+                    <img src="../img/products/televisao_3.webp" alt="related product 1">
+                </div>
+            </div>
+            <div class="related-product">
+                <p class="related-text">Capa de couro para Novo Kindle Paperwhite (11ª geração - 2021) - Cor Azul Marinho.<br><br><strong>R$100,00</strong></p>
+                <div class="related-image">
+                    <img src="../img/products/televisao_2.webp" alt="related product 1">
+                </div>
+            </div>
+            <div class="related-product">
+                <p class="related-text">Capa Nupro para Novo Kindle Paperwhite (11ª geração - 2021) - Cor Preta.<br><br><strong>R$100,00</strong></p>
+                <div class="related-image">
+                    <img src="../img/products/televisao_4.png" alt="related product 1">
+                </div>
+            </div>
+            <div class="related-product">
+                <p class="related-text">Capa de couro para Novo Kindle Paperwhite (11ª geração - 2021) - Cor Azul Marinho.<br><br><strong>R$100,00</strong></p>
+                <div class="related-image">
+                    <img src="../img/products/televisao_1.webp" alt="related product 1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-ads">
+        <div class="image-1">
+            <img src="../img/products/product_image_1.jpg" alt="" class="img-1">
+        </div>
+        <h2 class="ad-sub-title">Com menos peso, viaje mais longe</h2>
+        <p class="ad-text">O Kindle Paperwhite é fino, leve e fácil de transportar para que você possa aproveitar seus livros favoritos a qualquer momento. Apresenta nossa característica tela antirreflexo de 300 ppi, agora com 10% mais brilho em sua configuração máxima, para que você possa ler em qualquer luz. E agora, uma única recarga de bateria via USB-C dura até 10 semanas. A duração da bateria pode variar dependendo do uso.</p>
+        <div class="image-1">
+            <img src="../img/products/product_image_4.jfif" alt="" class="img-2">
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <h2 class="information-title">Informações técnicas</h2>
+
+    <table class="information-table">
+        <tr>
+            <td>Modelo</td>
+            <td>TV</td>
+        </tr>
+        <tr>
+            <td>Cor</td>
+            <td>Preto</td>
+        </tr>
+        <tr>
+            <td>Peso</td>
+            <td>1kg</td>
+        </tr>
+        <tr>
+            <td>Modelo</td>
+            <td>TV</td>
+        </tr>
+        <tr>
+            <td>Cor</td>
+            <td>Preto</td>
+        </tr>
+        <tr>
+            <td>Peso</td>
+            <td>1kg</td>
+        </tr>
+        <tr>
+            <td>Modelo</td>
+            <td>TV</td>
+        </tr>
+        <tr>
+            <td>Cor</td>
+            <td>Preto</td>
+        </tr>
+        <tr>
+            <td>Peso</td>
+            <td>1kg</td>
+        </tr>
+    </table>
+
+    <footer>
+        <img src="../img/products/1647270769071.jfif" alt="">
+        <div class="info">
+            <span>DH - Digital House</span>
+            <span>Av. Domingos Odália Filho, 301, Osasco - SP</span>
+            <span>(11) 4858-4656</span>
+            <span>alunos@digitalhouse.com</span>
+        </div>
+
+        <div class="info" id="info">
+            <p>Quem somos nós</p>
+            <p>Nossas redes sociais:</p>
+            <div class="social_media">
+                <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-square fa-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp fa-xl"></i></a>                
+            </div>
+        </div>
+    </footer>
+    <script src="../script/products.js"></script>
+
+</body>
 </html>
