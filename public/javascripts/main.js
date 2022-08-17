@@ -52,8 +52,15 @@ const saveClient = () => {
             nome: document.getElementById('nome').value,
             preco: document.getElementById('preco').value,
             peso: document.getElementById('peso').value,
-            Imagem: document.getElementById('imagem').value,
-            categoria: document.getElementById('categoria').value
+            tamanho: document.getElementById('tamanho').value,
+            marca: document.getElementById('marca').value,
+            modelo: document.getElementById('modelo').value,
+            quantia: document.getElementById('quantia').value,
+            descricao: document.getElementById('descricao').value,
+            cor: document.getElementById('cor').value,
+            segue: document.getElementById('segue').value,
+            categoria: document.getElementById('categoria').value,
+            imagem: document.getElementById('imagem').value,
         }
         const index = document.getElementById('nome').dataset.index
         if (index == 'new') {
@@ -74,11 +81,18 @@ const createRow = (client, index) => {
         <td>${client.nome}</td>
         <td>${client.preco}</td>
         <td>${client.peso}</td>
+        <td>${client.tamanho}</td>
+        <td>${client.marca}</td>
+        <td>${client.modelo}</td>
+        <td>${client.quantia}</td>
+        <td>${client.descricao}</td>
+        <td>${client.cor}</td>
+        <td>${client.segue}</td>
+        <td>${client.categoria}</td>
         <td><img style="
         width:100px;
         height:100px;
-        margin-top: 7px;" src="${client.Imagem}"></td>
-        <td>${client.categoria}</td>
+        margin-top: 7px;" src="${client.imagem}"></td>
         <td>
         <button type="button" class="button green"  id="edit-${index}">Editar</button>
         <button type="button" class="button red" id="delete-${index}">Excluir</button>
@@ -102,8 +116,15 @@ const fillFields = (client) => {
     document.getElementById('nome').value =  client.nome
     document.getElementById('preco').value =  client.preco
     document.getElementById('peso').value =  client.peso
-    document.getElementById('imagem').value =  client.imagem
+    document.getElementById('tamanho').value =  client.tamanho
+    document.getElementById('marca').value =  client.marca
+    document.getElementById('modelo').value =  client.modelo
+    document.getElementById('quantia').value =  client.quantia
+    document.getElementById('descricao').value =  client.descricao
+    document.getElementById('cor').value =  client.cor
+    document.getElementById('segue').value =  client.segue
     document.getElementById('categoria').value =  client.categoria
+    document.getElementById('imagem').value =  client.imagem
     document.getElementById('nome').dataset.index = client.index
 }
 
