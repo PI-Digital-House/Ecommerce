@@ -17,6 +17,21 @@ module.exports = {
       weight: {
         type: Sequelize.FLOAT
       },
+      size:{
+        type: Sequelize.FLOAT
+      },
+      model:{
+        type: Sequelize.STRING
+      },
+      description:{
+        type: Sequelize.TEXT
+      },
+      color:{
+        type: Sequelize.STRING
+      },
+      follow:{
+        type: Sequelize.TEXT
+      },
       categoryId: {
         type: Sequelize.INTEGER,
         allowNull:false,
@@ -31,14 +46,6 @@ module.exports = {
         references:{
           model: 'Brands',
           key: 'id'
-        }
-      },
-      specificationId: {
-        type: Sequelize.INTEGER,
-        allowNull:false,
-        references:{
-          model:'Specifications',
-          key:'id'
         }
       },
       amount: {

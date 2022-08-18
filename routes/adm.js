@@ -8,9 +8,9 @@ const productController = require('../controllers/productController');
 const { route } = require('./customer');
 
 
-router.get('/', function(req, res, next) {
-    res.render('registerProducts.ejs', {title: "Cadastro"})
-});
+// router.get('/', function(req, res, next) {
+
+// });
 
 //Brand
 router.get('/brand', brandController.index);

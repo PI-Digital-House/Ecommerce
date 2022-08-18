@@ -8,8 +8,7 @@ module.exports ={
     async index(req,res ){
         const results =  await Brand.findAll();
 
-
-        return res.json(results)
+        return res.render('registerProducts.ejs', {results})
 
     },
 
