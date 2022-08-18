@@ -7,9 +7,9 @@ module.exports ={
     async index(req,res ){
         const results =  await Product.findAll();
 
-        return res.json(results)
-        // return res.render('registerProducts.ejs', {results})
-       
+
+        return res.render('registerProducts.ejs', {results})
+
 
     },
 
@@ -22,8 +22,10 @@ module.exports ={
             brandID,
             amount} = req.body
 
-        return res.render('registerProducts.ejs', await Product.create({name,price,weight,categoryId,brandID}))
 
+            await Product.create({name,price,weight,categoryId,brandID,amount})
+
+            res.status(201).send();
     },
 
     async update(req,res){

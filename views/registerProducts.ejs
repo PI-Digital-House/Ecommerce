@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/stylesheets/button.css">
     <link rel="stylesheet" href="/stylesheets/records.css">
     <link rel="stylesheet" href="/stylesheets/modal.css">
-    <script src="/javascript/main.js" defer></script>
+    <script src="/javascripts/main.js" defer></script>
     <title>Cadastro</title>
   </head>
   <body>
@@ -37,7 +37,7 @@
                   <th>Imagem</th>
                   <th>Ação</th>
 
-                
+
               </tr>
           </thead>
           <tbody>
@@ -64,26 +64,25 @@
                   <h2>Novo Produto</h2>
                   <span class="modal-close" id="modalClose">&#10006;</span>
               </header>
-              <form id = "form" class="modal-form">
-                  <input type="text" id="nome" data-index="new" class="modal-field-large" placeholder="Nome do Produto" required>
-                  <input type="text" id="preco" class="modal-field" placeholder="Preço" required>
-                  <input type="text" id="peso" class="modal-field" placeholder="Peso" required>
-                  <input type="text" id="categoria" class="modal-field" placeholder="Categoria" required>
-                  <input type="text" id="tamanho" class="modal-field" placeholder="Tamanho" required>
-                  <input type="text" id="marca" class="modal-field" placeholder="Marca" required>
-                  <input type="text" id="modelo" class="modal-field" placeholder="Modelo" required>
-                  <input type="text" id="quantia" class="modal-field" placeholder="Quantia" required>
-                  <input type="text" id="descricao" class="modal-field" placeholder="Descrição" required>
-                  <input type="text" id="cor" class="modal-field" placeholder="Cor" required>
-                  <input type="text" id="segue" class="modal-field" placeholder="Segue" required>
-                  <input type="text" id="imagem" class="modal-field-large" placeholder="Imagem" required>
-                  
+              <form id="form" class="modal-form" action="/adm/product" method="post">
+                  <input type="text" name="name" id="nome" data-index="new" class="modal-field-large" placeholder="Nome do Produto" required>
+                  <input type="text" name="price" id="preco" class="modal-field" placeholder="Preço" required>
+                  <input type="text" name="weight" id="peso" class="modal-field" placeholder="Peso" required>
+                  <input type="text" name="categoryId" id="categoria" class="modal-field" placeholder="Categoria" required>
+                  <input type="text" name="size" id="tamanho" class="modal-field" placeholder="Tamanho" required>
+                  <input type="text" name="brandID" id="marca" class="modal-field" placeholder="Marca" required>
+                  <input type="text" name="" id="modelo" class="modal-field" placeholder="Modelo" required>
+                  <input type="text" name="" id="quantia" class="modal-field" placeholder="Quantia" required>
+                  <input type="text" name="" id="descricao" class="modal-field" placeholder="Descrição" required>
+                  <input type="text" name="" id="cor" class="modal-field" placeholder="Cor" required>
+                  <input type="text" name="" id="segue" class="modal-field" placeholder="Segue" required>
+                  <input type="text" name="" id="imagem" class="modal-field-large" placeholder="Imagem" required>
+                  <footer class="modal-footer">
+                      <button type="submit" id="salvar"class="button green">Salvar</button>
+                      <button id="cancelar"class="button blue">Cancelar</button>
+                  </footer>
 
               </form>
-              <footer class="modal-footer">
-                  <button id="salvar"class="button green">Salvar</button>
-                  <button id="cancelar"class="button blue">Cancelar</button>
-              </footer>
           </div>
       </div>
   </main>
