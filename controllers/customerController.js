@@ -15,9 +15,9 @@ module.exports ={
     async find(req,res){
         const {id} = req.params
 
-        const results = await Customer.findByPk(id)
+        const customer = await Customer.findByPk(id)
 
-        return res.json(results);
+        return res.render("profile",{customer})
 
     },
 
