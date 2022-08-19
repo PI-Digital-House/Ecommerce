@@ -19,7 +19,11 @@
       <h1 class="header-title">Cadastro de Produtos</h1>
   </header>
   <main>
+    <div class="button-header">
       <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Produto</button>
+      <button type="button" class="button blue mobile" id="cadastrarCategoria">Cadastrar Categoria</button>
+      <button type="button" class="button blue mobile" id="cadastrarMarca">Cadastrar Produto</button>
+    </div>
       <table id = "tbProduct" class="records">
           <thead>
               <tr>
@@ -85,6 +89,45 @@
               </form>
           </div>
       </div>
+      
+  <!-- Modal Categoria-->
+
+       <div class="modal" id="modalCat">
+         <div class="modal-content">
+            <header class="modal-header">
+              <h2>Novo Produto</h2>
+                <span class="modal-close" id="modalCloseCat">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form" action="/adm/product" method="post">
+                 <input type="text" name="name" id="nome" data-index="new" class="modal-field-large" placeholder="Nome da Categoria" required>
+                <footer class="modal-footer">
+                 <button type="submit" id="salvar"class="button green">Salvar</button>
+                 <button id="cancelar"class="button blue">Cancelar</button>
+                  </footer>
+                  
+                  </form>
+            </div>
+        </div>
+
+        <div class="modal" id="modalMar">
+            <div class="modal-content">
+               <header class="modal-header">
+                 <h2>Novo Produto</h2>
+                   <span class="modal-close" id="modalCloseMar">&#10006;</span>
+                   </header>
+                   <form id="form" class="modal-form" action="/adm/product" method="post">
+                    <input type="text" name="name" id="nome" data-index="new" class="modal-field-large" placeholder="Nome da Categoria" required>
+                   <footer class="modal-footer">
+                    <button type="submit" id="salvar"class="button green">Salvar</button>
+                    <button id="cancelar"class="button blue">Cancelar</button>
+                     </footer>
+                     
+                     </form>
+               </div>
+           </div>
+
+                        
+
   </main>
   <footer>
       <img src="/img/Logo.png" alt="">

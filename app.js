@@ -10,6 +10,7 @@ const logger = require('morgan');
 const customerRouter = require('./routes/customer');
 const homeRouter = require('./routes/home')
 const admRouter = require('./routes/adm')
+const registerProductsRouter = require('./routes/registerProducts')
 
 
 const app = express();
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use('/customer', customerRouter);
 app.use('/', homeRouter);
 app.use('/adm', admRouter);
+app.use('/products', registerProductsRouter);
 
 
 
