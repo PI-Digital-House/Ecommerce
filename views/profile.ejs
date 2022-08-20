@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/stylesheets/profile.css">
+    <link rel="stylesheet" href="./profile.css">
     <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./profile.js" defer></script>
     <title>profile</title>
 </head>
     <nav>
@@ -30,12 +31,11 @@
                     <i class="fa-regular fa-cart-shopping"></i>
                 </li>
                 </ul>
-    </nav>
+    </nav> 
     <main>
                <div class="usuario-bv">
-                  <span> Bem Vindo, <%= customer.name %> </span><br>
-
-                  <span><ion-icon name="mail-outline"></ion-icon><%= customer.email %> </span>
+                  <span><%= Bem Vindo, %></span><br>
+                  <span><ion-icon name="mail-outline"></ion-icon>Email</span> 
                </div>
 
            <div>
@@ -57,39 +57,39 @@
                </div>
 
                <div>
-                   <span> STATUS </span>
+                   <span><%= STATUS %></span>
                <div class="div-status">
                    <div>
-                       <span>STATUS </span>
+                       <span><%= STATUS %></span>
                    </div>
 
                    <div>
-                     <span>CONCLUIDO</span>
+                     <span>C<%= CONCLUIDO %></span>
                   </div>
                </div>
 
                <div>
-                   <span>DATA</span>
+                   <span><%= DATA %></span>
                <div class="div-status">
                    <div>
-                       <span>DATA</span>
+                       <span><%= DATA %></span>
                     </div>
 
                     <div>
-                        <span>10/10/2010</span>
+                        <span><%= 10/10/2010 %></span>
                     </div>
 
                </div>
 
                <div>
-                   <span>PAGAMENTO</span>
+                   <span><%= PAGAMENTO %></span>
                <div class="div-status">
                    <div>
-                       <span>PAGAMENTO</span>
+                       <span>PA<%= PAGAMENTO %></span>
                    </div>
 
                    <div>
-                    <span>cartão/dinheiro</span>
+                    <span>c<%= cartão/dinheiro %></span>
                    </div>
 
                </div>
@@ -102,7 +102,7 @@
                <div>
                <div class="endereco-div">
                    <div>
-                       <span> <%= customer.address %></span>
+                       <span><%= Endereço %></span>
                    </div>
      </main>
  </body>
