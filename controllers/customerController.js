@@ -4,11 +4,9 @@ const Customer = models.Customer
 
 
 module.exports ={
-    async index(req,res ){
-        const results =  await Customer.findAll();
+    async login(req,res ){
 
-
-        return res.json(results)
+        return res.render('cadastro')
 
     },
 

@@ -2,7 +2,7 @@ const customerController = require('../controllers/customerController')
 const express = require('express');
 const router = express.Router();
 
-router.get('/',customerController.index)
+router.get('/',customerController.login)
 router.get('/:id',customerController.find)
 router.post('/',customerController.create)
 router.put('/:id', customerController.update)
