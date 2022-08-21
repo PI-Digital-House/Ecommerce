@@ -1,6 +1,8 @@
+const { json } = require('sequelize');
 const sequelize = require('sequelize');
-const models = require('../models')
-const Customer = models.Customer
+// const { validationResult } = require('express-validator');
+const models = require('../models');
+const Customer = models.Customer;
 
 
 module.exports ={
@@ -9,6 +11,12 @@ module.exports ={
 
         return res.render('login')
 
+    },
+
+    async logCustomer(req,res){
+        const {email,password,logged} = req.body
+
+        const customerSaved = fs.readFileSync(customer.json())
     },
 
     async new(req,res){
@@ -32,7 +40,7 @@ module.exports ={
 
         await Customer.create({email,password,cpf})
 
-        return res.status(201).send();
+        return res.send(201).send();
 
     },
 

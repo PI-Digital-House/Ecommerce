@@ -13,6 +13,7 @@ const admRouter = require('./routes/adm')
 const registerProductsRouter = require('./routes/registerProducts')
 
 //Importing Midlleware
+// const cookieMiddleware = require('./middlewares/cookies')
 const logMiddleware = require('./middlewares/logSite')
 
 //App
@@ -28,7 +29,9 @@ app.set('view engine', 'ejs');
 
 
 //Middleware
+// app.use(cookieMiddleware)
 app.use(logMiddleware);
+
 
 
 app.use(logger('dev'));
