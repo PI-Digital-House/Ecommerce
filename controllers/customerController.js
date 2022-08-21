@@ -4,10 +4,15 @@ const Customer = models.Customer
 
 
 module.exports ={
+
     async login(req,res ){
 
-        return res.render('cadastro')
+        return res.render('login')
 
+    },
+
+    async new(req,res){
+        res.render('cadastro')
     },
 
     async find(req,res){
@@ -21,40 +26,11 @@ module.exports ={
 
     async create(req,res){
         const {
-            name,
-            lastName,
             email,
             password,
-            phone,
-            birthDay,
-            cpf,
-            address,
-            complementary,
-            neighborhood,
-            city,
-            state,
-            cep,
-            referencePoint,
-            createdAt,
-            updatedAt} = req.body
+            cpf} = req.body
 
-        await Customer.create({
-            name,
-            lastName,
-            email,
-            password,
-            phone,
-            birthDay,
-            cpf,
-            address,
-            complementary,
-            neighborhood,
-            city,
-            state,
-            cep,
-            referencePoint,
-            createdAt,
-            updatedAt})
+        await Customer.create({email,password,cpf})
 
         return res.status(201).send();
 

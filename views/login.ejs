@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <script src="cadastro.js" defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <img src="img/Logo.png" id='logo' alt="Logo">
+            </li>
+            <li>
+                <input id="buscar" type="text"  placeholder="Buscar..."/>
+                <input id="botao" type="submit" value="Ir"/>
+                <label for="lupa" class="lupa">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </label>
+            </li>
+            <li>
+                <i class="fa-solid fa-user"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="id">
+                <i class="fa-solid fa-user"></i>
+                <h1>Identificação</h1>
+        </div>
+        <div class="margin">
+                <div class="separacao">
+                    <section class="formLogin">
+                        <h2>Já tenho cadastro</h2>
+                        <div class="mail">
+                            <div class="login">
+                            <div class="inputForm">
+                                <input type="text"  id="inputUsuarioLogin" value placeholder="Email">
+                            </div>
+                            </div>
+                            <div class="senha">
+                                <div class="inputForm">
+                                    <input type="password" id="inputSenhaLogin" class="senha" value placeholder="Senha">
+                                    <button class="senhaOlhoLogin" id="olho">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="botaoLogin">
+                            <button id="botaoLogin" class="botaoId">
+                                <i class="fa-solid fa-right-to-bracket"></i>
+                                <p>Entrar</p>
+                            </button>
+                            </div>
+                            <div class="esquecimento">
+                            <div id="esqueciEmail" class="esqueciES">Esqueci meu login
+                            </div>
+                            <div id="esqueciSenha" class="esqueciES">Esqueci a minha Senha
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+        <div class="divisoria"></div>
+        <section id="formprecadastro" class="cadastro">
+            <h2>Quero me cadastrar</h2>
+            <div class="preForm">
+                <form action="/customer/new" method="post">
+                <div class="inputForm">
+                    <div class="emailCadastro">
+                    <input type="text" name="email" value placeholder="Email">
+                    </div>
+                </div>
+                <div class="senhaCadastro">
+                    <div class="inputForm">
+                        <input type="password" name="password" id="inputSenhaLogin" class="senha" value placeholder="Crie sua senha">
+                        <button class="senhaOlho" id="olho">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            <div class="confirmaSenha">
+                <div class="inputForm">
+                    <input type="password" class="senha" value placeholder="Confirme a senha">
+                    <button class="senhaOlho2" id="olho">
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="doc">
+                <div class="inputform">
+                    <input type="number" name="cpf" value placeholder="CPF ou CNPJ">
+                </div>
+            </div>
+            <div id="botaoPreCadastro">
+                <button id="botaoPreCadastro" type="submit" class="botaoPreCadastro">
+                    <i class="fa-solid fa-address-card"></i>
+                        <a target="_blank" href="./cadastro.ejs">
+                    <p>Cadastre-se</p>
+                        </a>
+                </button>
+            </div>
+            </form>
+            </div>
+        </section>
+    </div>
+    </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
