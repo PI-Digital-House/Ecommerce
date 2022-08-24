@@ -5,6 +5,7 @@ const sequelize = require('sequelize')
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+// const hash = bcrypt.hashSync('password', 12);
 
 //Importing Router
 const customerRouter = require('./routes/customer');

@@ -45,22 +45,25 @@
                         <div class="mail">
                             <div class="login">
                             <div class="inputForm">
-                                <input type="text"  id="inputUsuarioLogin" value placeholder="Email">
+                                <form action="/customer/login" method="post">
+                                <input type="text"  name="email" id="inputUsuarioLogin" value placeholder="Email">
                             </div>
                             </div>
                             <div class="senha">
                                 <div class="inputForm">
-                                    <input type="password" id="inputSenhaLogin" class="senha" value placeholder="Senha">
+                                    <input type="password" name="password" id="inputSenhaLogin" class="senha" value placeholder="Senha">
                                     <button class="senhaOlhoLogin" id="olho">
                                         <i class="fa-solid fa-eye"></i>
                                     </button>
                                 </div>
+                            
                             </div>
                             <div id="botaoLogin">
-                            <button id="botaoLogin" class="botaoId">
+                            <button id="botaoLogin" type="submit" class="botaoId">
                                 <i class="fa-solid fa-right-to-bracket"></i>
                                 <p>Entrar</p>
                             </button>
+                        </form>
                             </div>
                             <div class="esquecimento">
                             <div id="esqueciEmail" class="esqueciES">Esqueci meu login

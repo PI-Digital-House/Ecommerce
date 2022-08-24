@@ -1,22 +1,46 @@
 const { json } = require('sequelize');
 const sequelize = require('sequelize');
+
+const fs = require('fs');
+const path =require('path');
+
+const bcrypt = require('bcrypt')
 // const { validationResult } = require('express-validator');
+// const hash = bcrypt.hashSync('password', 12)
 const models = require('../models');
+const { emit } = require('process');
 const Customer = models.Customer;
 
 
 module.exports ={
 
-    async login(req,res ){
-
+    async getlogin(req,res ){
         return res.render('login')
-
     },
 
-    async logCustomer(req,res){
-        const {email,password,logged} = req.body
+    async login(req,res){
 
-        const customerSaved = fs.readFileSync(customer.json())
+        const {id,email,password} = req.body
+
+         const user = await Customer.findOne({attributes: ['email', 'password'],
+              where: {
+                email
+              }
+             })
+
+            const comparepass = await bcrypt.compare(password, user.password)
+
+             if(comparepass === true && user.email === {email}){
+                return console.log("Ta funcionando")
+             }
+
+
+
+
+
+
+
+
     },
 
     async new(req,res){
@@ -38,7 +62,9 @@ module.exports ={
             password,
             cpf} = req.body
 
-        await Customer.create({email,password,cpf})
+        const encrypted = bcrypt.hashSync(password, 10)
+
+        await Customer.create({email,password:encrypted,cpf})
 
         return res.send(201).send();
 
