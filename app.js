@@ -1,4 +1,4 @@
-
+//Config
 const createError = require('http-errors');
 const express = require('express');
 const sequelize = require('sequelize')
@@ -13,18 +13,35 @@ const admRouter = require('./routes/adm')
 const registerProductsRouter = require('./routes/registerProducts')
 const cartRouter = require('./routes/cart.js')
 
+//Importing Midlleware
+// const cookieMiddleware = require('./middlewares/cookies')
+const logMiddleware = require('./middlewares/logSite')
 
+//App
 const app = express();
 
-// view engine setup
+
+// View engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+
+
+
+
+//Middleware
+// app.use(cookieMiddleware)
+app.use(logMiddleware);
+
+
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 
 //Routes
 app.use('/customer', customerRouter);

@@ -1,64 +1,46 @@
+const { json } = require('sequelize');
 const sequelize = require('sequelize');
-const models = require('../models')
-const Customer = models.Customer
+// const { validationResult } = require('express-validator');
+const models = require('../models');
+const Customer = models.Customer;
 
 
 module.exports ={
-    async index(req,res ){
-        const results =  await Customer.findAll();
 
+    async login(req,res ){
 
-        return res.json(results)
+        return res.render('login')
 
+    },
+
+    async logCustomer(req,res){
+        const {email,password,logged} = req.body
+
+        const customerSaved = fs.readFileSync(customer.json())
+    },
+
+    async new(req,res){
+        res.render('cadastro')
     },
 
     async find(req,res){
         const {id} = req.params
 
-        const results = await Customer.findByPk(id)
+        const customer = await Customer.findByPk(id)
 
-        return res.json(results);
+        return res.render("profile",{customer})
 
     },
 
     async create(req,res){
         const {
-            name,
-            lastName,
             email,
             password,
-            phone,
-            birthDay,
-            cpf,
-            address,
-            complementary,
-            neighborhood,
-            city,
-            state,
-            cep,
-            referencePoint,
-            createdAt,
-            updatedAt} = req.body
+            cpf} = req.body
 
-        await Customer.create({
-            name,
-            lastName,
-            email,
-            password,
-            phone,
-            birthDay,
-            cpf,
-            address,
-            complementary,
-            neighborhood,
-            city,
-            state,
-            cep,
-            referencePoint,
-            createdAt,
-            updatedAt})
+        await Customer.create({email,password,cpf})
 
-        return res.status(201).send();
+        return res.send(201).send();
 
     },
 
