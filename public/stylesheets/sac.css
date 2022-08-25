@@ -9,13 +9,13 @@
 }
 
 
-header{
+header
+{
     height: 12.5rem;
 }
 
-
-
-.navigation{
+.navigation
+{
     position: relative;
     height: 29.375rem;
     width: 4.375rem;
@@ -26,11 +26,13 @@ header{
     transition: 0.5s;
 }
 
-.navigation:hover{
+.navigation:hover
+{
     width: 18.75rem;
 }
 
-.navigation ul{
+.navigation ul
+{
     position: absolute;
     top: 0;
     left: 0;
@@ -39,16 +41,18 @@ header{
     padding-top: 2.5rem;
 }
 
-.navigation ul li {
+.navigation ul li
+{
     position: relative;
     list-style: none;
     width: 100%;
     border-top-left-radius: 1.25rem;
     border-bottom-left-radius: 1.25rem;
     border-left: 0.625rem solid #424242;
-}   
+}
 
-.navigation ul li a {
+.navigation ul li a
+{
     position: relative;
     display: flex;
     width: 100%;
@@ -56,7 +60,8 @@ header{
     color: black;
 }
 
-.navigation ul li a .icon{
+.navigation ul li a .icon
+{
     position: relative;
     display: block;
     min-width: 3.75rem;
@@ -65,13 +70,15 @@ header{
     line-height: 4.375;
 }
 
-.navigation ul li a .icon ion-icon{
+.navigation ul li a .icon ion-icon
+{
     position: relative;
     font-size: 1.5rem;
     z-index: 1;
 }
 
-.navigation ul li a .title{
+.navigation ul li a .title
+{
     position: relative;
     display: block;
     padding-left: 0.625rem;
@@ -80,12 +87,13 @@ header{
     white-space: nowrap;
 }
 
-.navigation ul li.active{
+.navigation ul li.active
+{
     background: rgb(196,19,167);
-    
 }
 
-.navigation ul li.active a::before{
+.navigation ul li.active a::before
+{
     content: '';
     position: absolute;
     top: -1.875rem;
@@ -97,7 +105,8 @@ header{
     box-shadow: 0.938rem 0.938rem 0 linear-gradient(0deg, rgba(196,19,167,1) 0%, rgba(75,187,203,1) 100%);
 }
 
-.navigation ul li.active a::after{
+.navigation ul li.active a::after
+{
     content: '';
     position: absolute;
     bottom: -1.875rem;
@@ -110,81 +119,94 @@ header{
 }
 
 
-.sac-container{
+.sac-container
+{
     display: flex;
     gap: 5%;
 }
 
-.sac{
+.sac
+{
     width: 80vw;
     display: flex;
     flex-direction: column;
 }
 
-.titulo{
+.titulo
+{
     display: flex;
     margin-bottom: 2%;
 }
 
-#icone{
+#icone
+{
     width: 1.875rem;
     height: 1.875rem;
 }
 
-.links{
+.links
+{
     width: 100%;
     margin-top: 2%;
     display: flex;
     gap: 7%;
 }
 
-.chat{
+.chat
+{
     display: flex;
     gap: 2%;
 }
 
-.subchat{
+.subchat
+{
     display: flex;
     gap: 0.313rem;
 }
 
 
-.email{
+.email
+{
     margin-top: 5%;
     display: flex;
     gap:0.625rem
 }
 
-.protocolos{
+.protocolos
+{
     display: flex;
     gap: 0.313rem;
     margin-top: 3%;
 }
 
-.prot-tit{
+.prot-tit
+{
     display: flex;
     gap: 0.625rem;
 }
 
-.menu{
+.menu
+{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
 }
 
-.prot-list{
+.prot-list
+{
     display: flex;
     gap: 0.625rem;
 }
 
-.solicit{
+.solicit
+{
     margin-top: 2%;
     display: block;
     border-bottom: 0.031ewm solid;
 }
 
-#icone2{
+#icone2
+{
     height: 1.563rem;
     width: 1.563rem;
 }

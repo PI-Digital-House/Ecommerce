@@ -7,31 +7,7 @@
 nav{
     background-image: linear-gradient(rgb(74, 206, 230,1),rgb(74 206 210 / 0%));
     }
-  #buscar{
-  position: relative;
-  display:block;
-  width: 50vw;
-  height: 3vh;
-  border-radius: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  color: rgb(2,2,2);
-  background-color: rgba(230, 241, 240);
-  line-height: 10px;
-  }
-  #botao{
-    font-size: 14px;
-    cursor: pointer;
-    outline: 0;
-   
-    background: 0 0;
-    border: none;
-    line-height: 1px;
-    width: auto;
-    height: 3vh;
-    opacity: 0;
-  }
-  
+
   ul, li{
   display: flex;
   justify-content: space-between;
@@ -43,12 +19,7 @@ nav{
     width: 24px;
     height: 24px;
   }
-  .lupa{
-    margin-left: -5px;
-    width: 30px;
-    height: 32px;
-    margin-top: 15px;
-  }
+
   main{
     background-color: #fefefe;
     padding: 14px;
@@ -61,19 +32,29 @@ nav{
     text-transform: uppercase;
     font-weight: 800;
   }
-  h2{
+  h2
+  {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.6rem;
   }
-  .id{
+
+  .id
+  {
     display: flex;
     flex-direction: row;
     -webkit-box-align: baseline;
     align-items: baseline;
     justify-content: center;
   }
-  .margin{
+  .id i
+  {
+    width: 24px;
+    height: 24px;
+  }
+
+  .margin
+  {
     display: flex;
     flex: 1 1 0%;
     flex-direction: row;
@@ -81,36 +62,31 @@ nav{
     align-items: center;
     justify-content: center;
   }
-  .id i{
-    width: 24px;
-    height: 24px;
-  }
-  .separacao{
-    display: flex;
-    flex: 1 1 0%;
-    -webkit-box-pack: center;
-    justify-content: center;
 
-  }
-
-.mail{
+.mail
+{
     position: relative;
     margin-bottom: 1rem;
+    border-radius: 42px;
 }
 
-input{
+input
+{
     position: relative;
-    width: 262px;
+    width: 299px;
     height: 36px;
     border-style: solid;
     border-width: 0.0625rem;
     border-radius: 0.25rem;
     border-color: gray;
+    border-radius: 42px;
 }
-.inputForm{
-    margin-bottom: 2.5px;
+.inputForm
+{
+    margin: 0.6rem;
 }
-.senha{
+.senha
+{
     position: relative;
 }
 .senhaOlhoLogin{
@@ -120,27 +96,29 @@ input{
     cursor: pointer;
     border:none;
     top: 11px;
-    
 }
-.senha i{
+.senha i
+{
     width: 14;
     height: 14;
     fill: none;
     border: none;
 }
-#botaoLogin{
+#botaoLogin
+{
 position: relative;
 margin-bottom: 1rem;
 justify-content: center;
 align-items: center;
 cursor: pointer;
 }
-#botaoLogin p:hover{
+#botaoLogin p:hover
+{
     color: rgb(240, 81, 232);
 }
-.botaoId{
-    width: 100%; 
-    /* 170px */
+.botaoId
+{
+    width: 95%;
     height: 32px;
     display: flex;
     -webkit-box-pack: center;
@@ -153,11 +131,7 @@ cursor: pointer;
     font-weight: 700;
     transition: background-color 0.3s ease 0s;
 }
-.botaoId i{
-    width: 22px;
-    height: 22px;
-    fill: none;
-}
+
 .esquecimento{
     position: relative;
     margin-bottom: 16px;
@@ -177,25 +151,7 @@ cursor: pointer;
     text-decoration: underline;
     cursor: pointer;
 }
-.divisoria{
-    display: flex;
-    width: 2px;
-    background-color: blueviolet;
-    margin: 0 32px;
-}
-.cadastro{
-   display: flex;
-   flex-direction: column; 
-}
-.preform{
-    position: relative;
-}
-.emailCadastro{
-    position: relative;
-}
-.senhaCadastro{
-    position: relative;
-}
+
 .senhaOlho{
     position: absolute;
     border: none;
@@ -206,110 +162,4 @@ cursor: pointer;
 }
 .confirmaSenha{
     position: relative;
-}
-.senhaOlho2{
-    position: absolute;
-    border: none;
-    background: none;
-    cursor: pointer;
-    left: 238px;
-    top: 11px;
-}
-.doc{
-    position: relative;
-    margin-bottom: 16px;
-}
-.doc input{
-background: nones;
-}
-#botaoPreCadastro{
-position: relative;
-margin-bottom: 1rem;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-}
-#botaoPreCadastro i{
-    display: flex;
-    align-items: center;
-    margin: 1px;
-}
-#botaoPreCadastro a{
-    text-decoration: none;
-    color: black;
-}
-#botaoPreCadastro a:hover{
-    color: rgb(240, 81, 232);
-}
-.botaoPreCadastro{
-  width: 100%;  
-  height: 32px;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgb(80, 206, 230,1);
-  border-radius: 16px;
-  background-color: #fefefe;
-  background: none;
-  user-select: none;
-  font-size: 18px;
-  font: 700;
-  font-weight: 700;
-}
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-.number{
-    display: flex;
-}
-.city{
-    display: flex;
-}
-#registration{
-    display: flex;
-    justify-content: center;
-}
-.registrationButton{
-    height: 32px;
-    width: 28%;
-    display: flex;
-    -webkit-box-pack: center;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgb(80, 206, 230,1);
-    border-radius: 16px;
-    background-color: #fefefe;
-    margin-top: 1rem;
-    user-select: none;
-    font-size: 18px;
-    font-weight: 700;
-    transition: background-color 0.3s ease 0s;
-    cursor: pointer;
-}
-.registrationButton p:hover{
-    color: rgb(240, 81, 232);
-}
-
-
-
-
-@media(max-width: 885px){
-    .separacao{
-        display: table-row;
-    }
-    .number{
-        display: table-row;
-    }
-    .city{
-        display: table-row;
-    }
-    .registrationButton{
-        font-size: 12px;
-    }
 }

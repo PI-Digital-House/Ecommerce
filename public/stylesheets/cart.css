@@ -14,18 +14,18 @@
     --quick-silver: hsl(0, 0%, 64%);
   
   
-    --fs-28: 28px;
-    --fs-24: 24px;
-    --fs-18: 18px;
-    --fs-15: 15px;
-    --fs-14: 14px;
+    --fs-28: 1.75rem;
+    --fs-24: 1.5rem;
+    --fs-18: 1.125rem;
+    --fs-15: 0.938rem;
+    --fs-14: 0.875rem;
   
     --fw-5: 500;
     --fw-6: 600;
     --fw-7: 700;
   
-    --px: 60px;
-    --radius: 5px;
+    --px: 3.75rem;
+    --radius: 0.313rem;
   
   }
   
@@ -61,7 +61,7 @@
     border: none;
   }
   
-  input:focus { outline: 2px solid var(--azure); }
+  input:focus { outline: 0.125rem solid var(--azure); }
   
   input::-webkit-inner-spin-button,
   input::-webkit-outer-spin-button {
@@ -71,13 +71,13 @@
   }
   
   
-  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar { width: 0.5rem; }
   
   ::-webkit-scrollbar-track { background: transparent; }
   
   ::-webkit-scrollbar-thumb {
     background: hsl(0, 0%, 80%);
-    border-radius: 10px;
+    border-radius: 0.625rem;
   }
   
   ::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
@@ -86,7 +86,7 @@
   
   
   .container {
-    max-width: 1440px;
+    max-width: 90rem;
     min-height: 100vh;
     margin: auto;
     display: flex;
@@ -97,14 +97,14 @@
     font-size: var(--fs-28);
     font-weight: var(--fw-6);
     color: var(--onyx);
-    border-bottom: 1px solid var(--gainsboro);
-    padding: 20px var(--px);
+    border-bottom: 0.063rem solid var(--gainsboro);
+    padding: 1.25rem var(--px);
     display:     flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
   }
   
-  .heading ion-icon { font-size: 40px; }
+  .heading ion-icon { font-size: 2.5rem; }
   
   .item-flex {
     display: flex;
@@ -113,41 +113,41 @@
   
   .checkout {
     width: 70%;
-    padding: 40px var(--px);
+    padding: 2.5rem var(--px);
     background: var(--white);
-    border-right: 1px solid var(--gainsboro);
+    border-right: 0.063rem solid var(--gainsboro);
   }
   
   .section-heading {
     color: var(--onyx);
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     font-size: var(--fs-24);
     font-weight: var(--fw-5);
   }
   
-  .payment-form { margin-bottom: 40px; }
+  .payment-form { margin-bottom: 2.5rem; }
   
   .payment-method {
     display:     flex;
     align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
+    gap: 1.875rem;
+    margin-bottom: 2.5rem;
   }
   
   .payment-method .method {
-    border: 1px solid var(--quick-silver);
+    border: 0.063rem solid var(--quick-silver);
     border-radius: var(--radius);
     width: 50%;
     display:     flex;
     align-items: center;
-    padding: 15px 30px;
-    gap: 20px;
+    padding: 0.938rem 1.875rem;
+    gap: 1.25rem;
     cursor: pointer;
   }
   
   .payment-method .selected { border-color: var(--azure); }
   
-  .payment-method .method ion-icon { font-size: 20px; }
+  .payment-method .method ion-icon { font-size: 1.25rem; }
   
   .payment-method .method .checkmark {
     margin-left: auto;
@@ -157,8 +157,8 @@
   .payment-method .method .fill { color: var(--azure); }
   
   .label-default {
-    padding-left: 10px;
-    margin-bottom: 5px;
+    padding-left: 0.625rem;
+    margin-bottom: 0.313rem;
     font-size: var(--fs-14);
     color: var(--spanish-gray);
   }
@@ -170,21 +170,21 @@
   }
   
   .payment-form input {
-    padding: 10px 15px;
+    padding: 0.625rem 0.938rem;
     font-size: var(--fs-18);
     font-weight: var(--fw-5);
   }
   
   .cardholder-name,
-  .card-number { margin-bottom: 20px; }
+  .card-number { margin-bottom: 1.25rem; }
   
   .card-number input,
-  .cvv input { letter-spacing: 3px; }
+  .cvv input { letter-spacing: 0.188rem; }
   
   .input-flex {
     display:     flex;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
   }
   
   .input-flex .expire-date,
@@ -192,7 +192,7 @@
   
   .expire-date .input-flex {
     color: var(--spanish-gray);
-    gap: 13px;
+    gap: 0.813rem;
   }
   
   .expire-date .input-flex input { text-align: center; }
@@ -204,18 +204,18 @@
   .btn:focus {
     color: var(--white);
     background: var(--azure);
-    outline: 2px solid var(--azure);
-    outline-offset: 2px;
+    outline: 0.125rem solid var(--azure);
+    outline-offset: 0.125rem;
   }
   
   .btn-primary {
     background: var(--azure);
     font-weight: var(--fw-5);
     color: var(--white);
-    padding: 13px 45px;
+    padding: 0.813rem 2.813rem;
   }
   
-  .btn-primary b { margin-right: 10px; }
+  .btn-primary b { margin-right: 0.625rem; }
   
   
   .cart {
@@ -226,17 +226,17 @@
   }
   
   .cart-item-box {
-    padding: 40px var(--px);
+    padding: 2.5rem var(--px);
     margin-bottom: auto;
   }
   
-  .product-card:not(:last-child) { margin-bottom: 20px; }
+  .product-card:not(:last-child) { margin-bottom: 1.25rem; }
   
   .product-card .card {
     position: relative;
     display:     flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 1.25rem;
   }
   
   .card .product-img { border-radius: var(--radius); }
@@ -245,24 +245,24 @@
     font-weight: var(--fw-6);
     font-size: var(--fs-15);
     color: var(--dim-gray);
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
   
   .card .detail .wrapper {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
   }
   
   .product-qty {
     display:     flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
   }
   
   .product-qty button {
     background: var(--platinum);
-    width:  20px;
-    height: 20px;
+    width:  1.25rem;
+    height: 1.25rem;
     display:         flex;
     justify-content: center;
     align-items:     center;
@@ -272,8 +272,8 @@
   .product-close-btn:active ion-icon { transform: scale(0.95); }
   
   .product-qty button ion-icon {
-    --ionicon-stroke-width: 60px;
-    font-size: 10px;
+    --ionicon-stroke-width: 3.75rem;
+    font-size: 0.625rem;
   }
   
   .product-close-btn {
@@ -283,33 +283,33 @@
   }
   
   .product-close-btn ion-icon {
-    font-size: 25px;
+    font-size: 1.563rem;
     color: var(--quick-silver);
   }
   
   .product-close-btn:hover ion-icon { color: var(--red-salsa); }
   
   .discount-token {
-    padding: 40px var(--px);
-    border-top:    1px solid var(--gainsboro);
-    border-bottom: 1px solid var(--gainsboro);
+    padding: 2.5rem var(--px);
+    border-top:    0.063rem solid var(--gainsboro);
+    border-bottom: 0.063rem solid var(--gainsboro);
   }
   
   .wrapper-flex {
     display:     flex;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
   }
   
   .wrapper-flex input {
-    padding: 12px 15px;
+    padding: 0.75rem 0.938rem;
     font-weight: var(--fw-6);
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
   }
   
   .btn-outline {
-    padding: 10px 25px;
-    border: 1px solid var(--azure);
+    padding: 0.625rem 1.563rem;
+    border: 0.063rem solid var(--azure);
     color: var(--azure);
   }
   
@@ -318,14 +318,14 @@
     color: var(--white);
   }
   
-  .amount { padding: 40px var(--px); }
+  .amount { padding: 2.5rem var(--px); }
   
   .amount > div {
     display:         flex;
     justify-content: space-between;
   }
   
-  .amount > div:not(:last-child) { margin-bottom: 10px; }
+  .amount > div:not(:last-child) { margin-bottom: 0.625rem; }
   
   .amount .total {
     font-size: var(--fs-18);
@@ -334,7 +334,7 @@
   }
   
   
-  @media (max-width: 1200px) {
+  @media (max-width: 75rem) {
   
     .item-flex { flex-direction: column-reverse; }
   
@@ -352,13 +352,13 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       width: 100%;
-      border-bottom: 1px solid var(--gainsboro);
+      border-bottom: 0.063rem solid var(--gainsboro);
     }
   
     .cart .wrapper { margin-top: auto; }
   
     .cart .cart-item-box {
-      border-right: 1px solid var(--gainsboro);
+      border-right: 0.063rem solid var(--gainsboro);
       margin-bottom: 0;
     }
   
@@ -368,28 +368,28 @@
   
   
   
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) {
   
-    :root { --px: 40px; }
+    :root { --px: 2.5rem; }
   
     .cart { grid-template-columns: 1fr; }
   
-    .discount-token { border-top: 1px solid var(--gainsboro); }
+    .discount-token { border-top: 0.063rem solid var(--gainsboro); }
   
-    .wrapper-flex { gap: 20px; }
+    .wrapper-flex { gap: 1.25rem; }
   
   }
   
   
   
-  @media (max-width: 567px) {
+  @media (max-width: 35.438rem) {
   
-    :root { --px: 20px; }
+    :root { --px: 1.25rem; }
   
     .payment-method,
     .input-flex {
       flex-direction: column;
-      gap: 20px;
+      gap: 1.25rem;
     }
   
     .payment-method .method { width: 100%; }

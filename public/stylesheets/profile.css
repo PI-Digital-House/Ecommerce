@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@600&family=Roboto:wght@500&display=swap');
 
-*{
+
+*
+{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -9,23 +11,21 @@
 }
 
 
-header{
+header
+{
     height: 12.5rem;
 }
 
-body{
+body
+{
     background: rgb(196,19,167);
     background: linear-gradient(0deg, rgba(196,19,167,1) 0%, rgba(75,187,203,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-/* div{
-    background-color: white;
-    border: black 0.063rem solid;
-    
-} */
-.navigation{
+.navigation
+{
     position: relative;
     height: 29.375rem;
     width: 4.375rem;
@@ -36,11 +36,13 @@ body{
     transition: 0.5s;
 }
 
-.navigation:hover{
+.navigation:hover
+{
     width: 18.75rem;
 }
 
-.navigation ul{
+.navigation ul
+{
     position: absolute;
     top: 0;
     left: 0;
@@ -49,16 +51,18 @@ body{
     padding-top: 2.5rem;
 }
 
-.navigation ul li {
+.navigation ul li
+{
     position: relative;
     list-style: none;
     width: 100%;
     border-top-left-radius: 1.25rem;
     border-bottom-left-radius: 1.25rem;
     border-left: 0.625rem solid #424242;
-}   
+}
 
-.navigation ul li a {
+.navigation ul li a
+{
     position: relative;
     display: flex;
     width: 100%;
@@ -66,7 +70,8 @@ body{
     color: black;
 }
 
-.navigation ul li a .icon{
+.navigation ul li a .icon
+{
     position: relative;
     display: block;
     min-width: 3.75rem;
@@ -75,13 +80,15 @@ body{
     line-height: 4.375rem;
 }
 
-.navigation ul li a .icon ion-icon{
+.navigation ul li a .icon ion-icon
+{
     position: relative;
     font-size: 1.5rem;
     z-index: 1;
 }
 
-.navigation ul li a .title{
+.navigation ul li a .title
+{
     position: relative;
     display: block;
     padding-left: 0.625rem;
@@ -90,11 +97,13 @@ body{
     white-space: nowrap;
 }
 
-.navigation ul li.active{
+.navigation ul li.active
+{
     background: rgb(196,19,167);
 }
 
-.navigation ul li.active a::before{
+.navigation ul li.active a::before
+{
     content: '';
     position: absolute;
     top: -1.875rem;
@@ -106,7 +115,8 @@ body{
     box-shadow: 0.938rem 0.938rem 0 linear-gradient(0deg, rgba(196,19,167,1) 0%, rgba(75,187,203,1) 100%);
 }
 
-.navigation ul li.active a::after{
+.navigation ul li.active a::after
+{
     content: '';
     position: absolute;
     bottom: -1.875rem;
@@ -119,7 +129,8 @@ body{
 }
 
 
-.container-profile{
+.container-profile
+{
     display: flex;
 
     padding: 0.313rem;
@@ -130,18 +141,21 @@ body{
     background: white;
 }
 
-.bemvindo{
+.bemvindo
+{
     display: flex;
     gap: 2%;
 }
 
-.usuario-bv{
+.usuario-bv
+{
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
 }
 
-.main-profile{
+.main-profile
+{
     display: flex;
     flex-direction: column;
 
@@ -151,42 +165,44 @@ body{
     width: 80%;
 }
 
-.pedido-status{
+.pedido-status
+{
     display: flex;
     justify-content: space-around;
     border-bottom: 0.063rem solid rgb(222, 224, 228);
-   
 }
 
-.div-status{
+.div-status
+{
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
     margin-bottom: 0.938rem;
 }
 
-.endereco{
+.endereco
+{
     margin-top: 0.625rem;
     margin-bottom: 0.625rem;
-    
     display: flex;
-
     gap: 50%;
-
 }
 
-.pedido-animacao{
+.pedido-animacao
+{
     margin-top: 0.938rem;
     display: flex;
     gap: 0.625rem;
 }
 
-.endereco-div{
+.endereco-div
+{
     display: flex;
     flex-direction: column;
     gap: 0.313rem;
 }
 
-.rastreamento{
+.rastreamento
+{
     justify-content: center;
 }
