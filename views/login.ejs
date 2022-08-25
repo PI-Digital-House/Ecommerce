@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="stylesheet" href="../public/stylesheets/navbar.css">
+    <link rel="stylesheet" href="../public/stylesheets/login.css">
     <script src="cadastro.js" defer></script>
     <title>Cadastro</title>
 </head>
@@ -16,23 +14,33 @@
     <nav>
         <ul>
             <li>
-                <img src="img/Logo.png" id='logo' alt="Logo">
+                <img src="../public/img/Logo@2x.png" id='logo' alt="Logo">
             </li>
             <li>
                 <input id="buscar" type="text"  placeholder="Buscar..."/>
                 <input id="botao" type="submit" value="Ir"/>
-                <label for="lupa" class="lupa">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-              </label>
             </li>
             <li>
-                <i class="fa-solid fa-user"></i>
-            </li>
-            <li>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class='ball'></div>
             </li>
         </ul>
     </nav>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='http://'>Home</a></li>
+          <li><a class='dropdown-arrow' href='http://'>Produtos</a>
+            <ul class='sub-menus'>
+              <li><a href='http://'>Smartphone</a></li>
+              <li><a href='http://'>Acessórios</a></li>
+              <li><a href='http://'>Tablet</a></li>
+            </ul>
+          </li>
+          <li><a href='http://'>Ofertas</a></li>
+          <li><a href='http://'>Categoria</a></li>
+        </ul>
+      </nav>
+      </nav>
     <main>
         <div class="id">
                 <i class="fa-solid fa-user"></i>
@@ -56,7 +64,7 @@
                                         <i class="fa-solid fa-eye"></i>
                                     </button>
                                 </div>
-                            
+
                             </div>
                             <div id="botaoLogin">
                             <button id="botaoLogin" type="submit" class="botaoId">
@@ -73,50 +81,8 @@
                             </div>
                         </div>
                     </section>
-        <div class="divisoria"></div>
-        <section id="formprecadastro" class="cadastro">
-            <h2>Quero me cadastrar</h2>
-            <div class="preForm">
-                <form action="/customer/new" method="post">
-                <div class="inputForm">
-                    <div class="emailCadastro">
-                    <input type="email" name="email" value placeholder="Email">
-                    </div>
-                </div>
-                <div class="senhaCadastro">
-                    <div class="inputForm">
-                        <input type="password" name="password" id="inputSenhaLogin" class="senha" value placeholder="Crie sua senha">
-                        <button class="senhaOlho" id="olho">
-                            <i class="fa-solid fa-eye"></i>
-                        </button>
-                    </div>
-                </div>
-            <div class="confirmaSenha">
-                <div class="inputForm">
-                    <input type="password" class="senha" value placeholder="Confirme a senha">
-                    <button class="senhaOlho2" id="olho">
-                        <i class="fa-solid fa-eye"></i>
-                    </button>
                 </div>
             </div>
-            <div class="doc">
-                <div class="inputform">
-                    <input type="number" name="cpf" value placeholder="CPF ou CNPJ">
-                </div>
-            </div>
-            <div id="botaoPreCadastro">
-                <button id="botaoPreCadastro" type="submit" class="botaoPreCadastro">
-                    <i class="fa-solid fa-address-card"></i>
-                        <a target="_blank" href="./cadastro.ejs">
-                    <p>Cadastre-se</p>
-                        </a>
-                </button>
-            </div>
-            </form>
-            </div>
-        </section>
-    </div>
-    </div>
     </main>
     <footer>
     </footer>
