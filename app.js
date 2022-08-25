@@ -13,6 +13,7 @@ const homeRouter = require('./routes/home')
 const admRouter = require('./routes/adm')
 const registerProductsRouter = require('./routes/registerProducts')
 const cartRouter = require('./routes/cart.js')
+const salesPanelRouter = require('./routes/salesPanel.js')
 
 //Importing Midlleware
 // const cookieMiddleware = require('./middlewares/cookies')
@@ -50,7 +51,7 @@ app.use('/', homeRouter);
 app.use('/adm', admRouter);
 app.use('/products', registerProductsRouter);
 app.use('/cart', cartRouter);
-
+app.use('/sales', salesPanelRouter);
 
 
 
