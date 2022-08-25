@@ -23,12 +23,18 @@ const logMiddleware = require('./middlewares/logSite')
 //App
 const app = express();
 
+//render public paste
+app.use('/views', express.static(path.resolve(__dirname, 'views')));
+app.use('/public', express.static(path.resolve(__dirname, 'public')));
+app.use('/views', express.static(path.resolve(__dirname, 'views')));
+app.use('/javascripts', express.static(path.resolve(__dirname, 'javascripts')));
+
 
 // View engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-
+app.disable('etag');
 
 
 

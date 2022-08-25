@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="../public/stylesheets/home.css">
+    <link rel="stylesheet" href="../public/stylesheets/navbar.css">
     <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
     <title>Home</title>
@@ -14,31 +15,35 @@
 <nav>
     <ul>
 <li>
-    <img src="img/Logo.png" alt="Logo">
+    <img src="../public/img/Logo@2x.png" id="img" alt="logo" />
 </li>
 <li>
     <input id="buscar" type="text"  placeholder="Buscar..."/>
     <input id="botao" type="submit" value="Ir"/>
-    <label for="lupa" class="lupa">
-      <i class="fa-solid fa-magnifying-glass"></i>
-  </label>
 </li>
 <li>
-  <i class="fa-solid fa-user"></i>
-</li>
-<li>
-  <i class="fa-solid fa-cart-shopping"></i>
-</li>
-<li>
-        <input type="checkbox" class="checkbox" id="btn">
-        <label id="chck" for="chck" class="label">
-            <i class="fa-solid fa-moon"></i>
-            <i class="fa-solid fa-sun"></i>
-     </label>
      <div class='ball'></div>
-  </li>
+</li>
+  
 </ul>
+<!-- navbar -->
+<nav id='menu'>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <ul>
+    <li><a href='http://'>Home</a></li>
+    <li><a class='dropdown-arrow' href='http://'>Produtos</a>
+      <ul class='sub-menus'>
+        <li><a href='http://'>Smartphone</a></li>
+        <li><a href='http://'>Acessórios</a></li>
+        <li><a href='http://'>Tablet</a></li>
+      </ul>
+    </li>
+    <li><a href='http://'>Ofertas</a></li>
+    <li><a href='http://'>Categoria</a></li>
+  </ul>
 </nav>
+</nav>
+<!-- navbar -->
     <main>
 <div class="slider">
   <div class="slides">
@@ -48,16 +53,16 @@
     <input type="radio" name="radio-btn" id="radio4">
 
   <div class="slide first">
-    <img src="./img/OFERTA DO DIA/3.png" alt="">
+    <img src="../public/img/img1.jpg" alt="">
   </div>
   <div class="slide">
-    <img src="./img/OFERTA DO DIA/4.png" alt="">
+    <img src="../public/img/img2.png" alt="">
   </div>
   <div class="slide">
-    <img src="./img/OFERTA DO DIA/5.png" alt="">
+    <img src="../public/img/img3.png" alt="">
   </div>
   <div class="slide">
-    <img src="./img/OFERTA DO DIA/6.png" alt="">
+    <img src="../public/img/img4.jpeg" alt="">
   </div>
   <div class="navigation-auto">
     <div class="auto-btn1"></div>
@@ -76,42 +81,42 @@
 
         <section id="gallery">
         <div class="card">
-            <img src="./img/console 2.png" alt="">
+            <img src="../public/img/img1.jpg" alt="">
             <div class="container">
               <h4><b>Console Xbox Series S - branca</b></h4>
               <p></p>
             </div>
           </div>
                   <div class="card">
-            <img src="./img/console 2.png" alt="">
+            <img src="../public/img/img1.jpg" alt="">
             <div class="container">
               <h4><b>Console Xbox Series S - branca</b></h4>
               <p></p>
             </div>
           </div>
           <div class="card">
-            <img src="./img/console 2.png" alt="">
+            <img src="../public/img/img1.jpg" alt="">
             <div class="container">
               <h4><b>Console Xbox Series S - branca</b></h4>
               <p></p>
             </div>
           </div>
           <div class="card">
-            <img src="./img/motorola 2.png" alt="">
+            <img src="../public/img/img1.jpg" alt="">
             <div class="container">
               <h4><b>Smartphone motorola</b></h4>
               <p></p>
             </div>
           </div>
           <div class="card">
-            <img src="./img/smartphone 3.png" alt="">
+            <img src="../public/img/img1.jpg" alt="">
             <div class="container">
               <h4><b>Smartphone Samgung</b></h4>
               <p<p></p>
             </div>
             </div>
               <div class="card">
-                <img src="./img/PS5 6.png" alt="">
+                <img src="../public/img/img1.jpg" alt="">
                 <div class="container">
                   <h4><b>Console Xbox Series S - branca</b></h4>
                   <p></p>
@@ -121,42 +126,42 @@
 
 <section id="gallery2">
               <div class="card">
-                <img src="./img/teclado 2.png" alt="">
+                <img src="../public/img/img1.jpg" alt="">
                 <div class="container">
                   <h4><b>Smartphone motorola</b></h4>
                   <p></p>
                 </div>
               </div>
               <div class="card">
-                <img src="./img/teclado 2.png" alt="">
+                <img src="../public/img/img1.jpg" alt="">
                 <div class="container">
                   <h4><b>Smartphone motorola</b></h4>
                   <p></p>
                 </div>
               </div>
               <div class="card">
-                <img src="./img/teclado 2.png" alt="">
+                <img src="../public/img/img1.jpg" alt="">
                 <div class="container">
                   <h4><b>Smartphone motorola</b></h4>
                   <p></p>
                 </div>
               </div>
               <div class="card">
-                <img src="./img/PS5 5.png" alt="">
+                <img src="../public/img/img1.jpg" alt="">
                 <div class="container">
-                  <h4><b>Smartphone Samgung</b></h4>
+                  <h4><b>Smartphone Samsung</b></h4>
                   <p></p>
                 </div>
             </div>
                 <div class="card">
-                    <img src="./img/teclado 2.png" alt="">
+                    <img src="../public/img/img1.jpg" alt="">
                     <div class="container">
                       <h4><b>Smartphone motorola</b></h4>
                       <p></p>
                     </div>
                   </div>
                   <div class="card">
-                    <img src="./img/tv 4.png" alt="">
+                    <img src="../public/img/img1.jpg" alt="">
                     <div class="container">
                       <h4><b>Smartphone Samgung</b></h4>
                       <p></p>
@@ -169,6 +174,6 @@
 
       </div>
     </footer>
-    <script src="home.js"></script>
+    <script src="../public/javascripts/home.js"></script>
 </body>
 </html>
