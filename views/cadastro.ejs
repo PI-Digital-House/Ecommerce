@@ -35,14 +35,14 @@
     </nav>
     <main>
         <div class="id">
-                <i class="fa-solid fa-user"></i>
-                <h1>Identificação </h1>
+        
+                <h1> <i class="fa-solid fa-id-card"></i> Identificação </h1>
         </div>
         <div class="margin">
                 <div class="separacao">
                     <section class="personalData">
                         <form action="/customer/new/:id?_method=PUT" method="post">
-                        <h2>Dados Pessoais</h2>
+                        <h2><i class="fa-solid fa-user"></i> Dados Pessoais</h2>
                         <div class="name">
                             <div class="nameID">
                             <div class="inputForm">
@@ -54,24 +54,52 @@
                                     <input type="text" name="lastName" id="inputName" value placeholder="Sobrenome">
                                 </div>
                                 </div>
-                            <div class="senha">
-                            </div>
-                            <div id="birthday">
-                          <div class="inputForm">
-                            <input type="date" id="inputBirthday" name="birthDay" value placeholder="Data de Nascimento">
-                          </div>
-                            </div>
-                            <div id="phone">
                                 <div class="inputForm">
-                                    <input type="tel" id="phone" name="phone" value placeholder="Telefone">
+                                    <input type="number" name="cpf" id="inputCpf" value placeholder="CPF">
+                                </div>
+                                <div class="inputForm">
+                                    <input type="email" name="email" id="inputEmail" value placeholder="Email">
+                                </div>
+                                </div>
+
+                                <div class="senhaCadastro">
+                                    <div class="inputForm">
+                                        <input type="password" name="password" id="inputSenhaLogin" class="senha" value placeholder="Crie sua senha">
+                                        <button class="senhaOlho" id="olho">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            <div class="confirmaSenha">
+                                <div class="inputForm">
+                                    <input type="password" name="password" class="senha" value placeholder="Confirme a senha">
+                                    <button class="senhaOlho2" id="olho">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                        </div>
+                            <div id="birthday">
+                                <div class="inputForm">
+                                  <input type="date" id="inputBirthday" name="birthDay" value placeholder="Data de Nascimento">
+                                </div>
+                                  </div>
+                                  <div id="phone">
+                                      <div class="inputForm">
+                                          <input type="tel" id="phone" name="phone" value placeholder="Telefone">
+                                      </div>
+                                  </div>
+                </div>
+        </div>
+                        
                     </section>
+
+       
         <div class="divisoria"></div>
         
         <section id="endereco" class="enderecoCadastro">
-            <h2>Endereço de Cadastro</h2>
+            <h2><i class="fa-solid fa-house-chimney-user"></i> Endereço de Cadastro</h2>
+            <div class="margin2">
+                <div class="endereco">
             <div class="preForm">
                 <div class="inputForm">
                     <div class="endereco">
@@ -104,6 +132,8 @@
             </div>
             </div>
         </div>
+    </div>
+</div>
         </section>
         
     </div>
