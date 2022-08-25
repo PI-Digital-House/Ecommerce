@@ -10,10 +10,10 @@ nav{
   background-image: linear-gradient(rgb(74, 206, 230,1),rgb(74 206 210 / 0%));
 }
 .logo{
-    width: 4rem;
-    height: 4rem;
-    top: -2096px;
-    left: 877px;
+    width: 3.9375rem;
+    height: 4.0625rem;
+    top: -131rem;
+    left: 54.8125rem;
 }
 #buscar{
 position: relative;
@@ -33,7 +33,7 @@ line-height: 0.625rem;
   outline: 0;
   background: 0 0;
   border: none;
-  line-height: 0.063rem;
+  line-height: 0.0625rem;
   width: auto;
   height: 3vh;
   opacity: 0;
@@ -48,10 +48,10 @@ text-decoration: none;
 width: auto;
 }
 .lupa{
-  margin-left: 0.75rem;
+  margin-left: -0.75rem;
   width: 1.875rem;
   height: 2rem;
-  margin-top: 0.938rem;
+  margin-top: 0.9375rem;
 }
 body{
   background-color: #fefefe;
@@ -93,7 +93,7 @@ body.dark #btn{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.313rem;
+  padding: 0.3125rem;
   position: relative;
   height: 26px;
   width: 3.125rem;
@@ -148,21 +148,21 @@ body.dark #btn{
 .manual-navigation{
   position: absolute;
   width: 36.25rem;
-  margin-top: -6rem;
-  margin-left: 0.063rem;
+  margin-top: -5.8125rem;
+  margin-left: 0.0625rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .manual-btn{
   border: 0.125rem solid black;
-  padding: 0.313rem;
+  padding: 0.3125rem;
   border-radius: 0.625rem;
   cursor: pointer;
   transition: 1s;
 }
 .manual-btn:not(:last-child){
-margin-right: 2.813rem;
+margin-right: 2.8125rem;
 }
 .manual-btn:hover{
 background-color: black;
@@ -181,20 +181,20 @@ background-color: black;
 }
 .navigation-auto div{
   border: 0.125rem solid black;
-  padding: 0.313rem;
+  padding: 0.3125rem;
   border-radius: 0.625rem;
   cursor: pointer;
   transition: 1s;
 }
 .navigation-auto{
   position: absolute;
-  width: 36rem;
-  margin-top: 19rem;
+  width: 36.375rem;
+  margin-top: 19.1875rem;
   display: flex;
   justify-content: center;
 }
 .navigation-auto div:not(:last-child){
-  margin-right: 2.813rem;
+  margin-right: 2.8125rem;
 }
 #radio1:checked ~ .navigation-auto .auto-btn1{
   background-color: black;
@@ -215,8 +215,8 @@ background-color: black;
     display: flex;
     align-items: center;
     border-radius: 0.625rem;
-    width: 210px;
-    height: 200px;
+    width: 13.125rem;
+    height: 12.5rem;
     padding: 0.25rem;
     flex-wrap: wrap;
     position: relative;
@@ -228,7 +228,7 @@ background-color: black;
     padding: 0.125rem 1rem;
   }
   .card img {
-    border-radius: 0.313rem 0.313rem 0 0;
+    border-radius: 0.3125rem 0.3125rem 0 0;
     width: 6.25rem;
     height: 8.125rem;
     align-items: center;
@@ -237,7 +237,7 @@ background-color: black;
     display:flex;
     grid-template-columns: repeat(8, 2fr);
     grid-template-rows: repeat(8, 3vw);
-    grid-gap: 0.938rem;
+    grid-gap: 0.9375rem;
     padding: 0.625rem;
     padding-top: 3.125rem;
     justify-content: space-around;
@@ -247,7 +247,7 @@ background-color: black;
     display: flex;
     grid-template-columns: repeat(8, 2fr);
     grid-template-rows: repeat(8, 3vw);
-    grid-gap: 0.938rem;
+    grid-gap: 0.9375rem;
     padding: 0.625rem;
     padding-top: 3.125rem;
     justify-content: space-around;
@@ -256,7 +256,7 @@ background-color: black;
   .footer{
     background-image: linear-gradient(rgb(74, 206, 230,1),rgb(74 206 210 / 0%));
   }
-@media (max-width: 23rem){
+@media (max-width: 23.4375rem){
   .nav{
   display: flex;
   flex-wrap: wrap;
