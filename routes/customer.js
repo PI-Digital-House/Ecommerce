@@ -6,11 +6,12 @@ const router = express.Router();
 
 router.get('/login',customerController.getlogin)
 router.post('/login', customerController.login)
+
 router.get('/new',customerController.new)
 router.post('/new',customerController.create)
 
-router.get('/:id',customerController.find)
-router.put('/:id', customerController.update)
+router.put('/new/:id', customerController.update)
+
 router.delete('/:id',customerController.delete)
 
 

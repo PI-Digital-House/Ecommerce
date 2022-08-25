@@ -5,6 +5,7 @@ const sequelize = require('sequelize')
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const methodOverride = require('method-override')
 // const hash = bcrypt.hashSync('password', 12);
 
 //Importing Router
@@ -33,6 +34,7 @@ app.set('view engine', 'ejs');
 //Middleware
 // app.use(cookieMiddleware)
 app.use(logMiddleware);
+app.use(methodOverride('_method'));
 
 
 

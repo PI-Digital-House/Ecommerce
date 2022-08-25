@@ -31,11 +31,11 @@
                     <i class="fa-regular fa-cart-shopping"></i>
                 </li>
                 </ul>
-    </nav> 
+    </nav>
     <main>
                <div class="usuario-bv">
-                  <span><%= Bem Vindo, %></span><br>
-                  <span><ion-icon name="mail-outline"></ion-icon>Email</span> 
+                  <span>Bem Vindo,<%= idCustomer.name %></span><br>
+                  <span><ion-icon name="mail-outline"></ion-icon><%= idCustomer.email %></span>
                </div>
 
            <div>
@@ -57,39 +57,39 @@
                </div>
 
                <div>
-                   <span><%= STATUS %></span>
+                   <span>STATUS</span>
                <div class="div-status">
                    <div>
-                       <span><%= STATUS %></span>
+                       <span>STATUS</span>
                    </div>
 
                    <div>
-                     <span>C<%= CONCLUIDO %></span>
+                     <span>CONCLUIDO</span>
                   </div>
                </div>
 
                <div>
-                   <span><%= DATA %></span>
+                   <span>DATA</span>
                <div class="div-status">
                    <div>
-                       <span><%= DATA %></span>
+                       <span>DATA</span>
                     </div>
 
                     <div>
-                        <span><%= 10/10/2010 %></span>
+                        <span>10/10/2010</span>
                     </div>
 
                </div>
 
                <div>
-                   <span><%= PAGAMENTO %></span>
+                   <span>PAGAMENTO</span>
                <div class="div-status">
                    <div>
-                       <span>PA<%= PAGAMENTO %></span>
+                       <span>PAGAMENTO</span>
                    </div>
 
                    <div>
-                    <span>c<%= cartão/dinheiro %></span>
+                    <span>cartão/dinheiro</span>
                    </div>
 
                </div>
@@ -102,7 +102,7 @@
                <div>
                <div class="endereco-div">
                    <div>
-                       <span><%= Endereço %></span>
+                       <span><%= idCustomer.address %></span>
                    </div>
      </main>
  </body>

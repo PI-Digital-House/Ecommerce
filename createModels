@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create model Customer
-npx sequelize model:generate --name Customer --attributes name:STRING,lastName:STRING,email:STRING,password:STRING,phone:STRING,birthDay:STRING,cpf:STRING,address:STRING,complementary:STRING,neighborhood:STRING,city:STRING,state:STRING,cep:STRING,referencePoint:STRING
+npx sequelize model:generate --name Customer --attributes name:STRING,lastName:STRING,admin:BOOLEAN,email:STRING,password:STRING,phone:STRING,birthDay:STRING,cpf:STRING,address:STRING,complementary:STRING,neighborhood:STRING,city:STRING,state:STRING,cep:STRING,referencePoint:STRING
 
 # Create model Credit Card
 npx sequelize model:generate --name CreditCard --attributes numberCard:INTEGER,expDate:STRING,cvv:INTEGER,nameCard:STRING,cpf:STRING,customerId:INTEGER

@@ -20,21 +20,27 @@ module.exports ={
 
     async login(req,res){
 
-        const {id,email,password} = req.body
+        const {email,password} = req.body
 
-         const user = await Customer.findOne({attributes: ['email', 'password'],
+         const user = await Customer.findOne({attributes: ['id','email', 'password'],
               where: {
                 email
               }
              })
+             if(user === null){
+                return res.status(400).send("Login ou Senha invalido")
 
-            const comparepass = await bcrypt.compare(password, user.password)
-
-             if(comparepass === true && user.email === {email}){
-                return console.log("Ta funcionando")
+             }else{
+                const comparepass = await bcrypt.compare(password, user.password)
+                if(user.email === email && comparepass === true){
+                    const idCustomer = await Customer.findByPk(user.id)
+                    res.render('profile',{idCustomer})
+                }else{
+                    if(!comparepass){
+                        res.status(400).send("Login ou senha invalido")
+                    }
+                }
              }
-
-
 
 
 
@@ -47,15 +53,6 @@ module.exports ={
         res.render('cadastro')
     },
 
-    async find(req,res){
-        const {id} = req.params
-
-        const customer = await Customer.findByPk(id)
-
-        return res.render("profile",{customer})
-
-    },
-
     async create(req,res){
         const {
             email,
@@ -64,9 +61,21 @@ module.exports ={
 
         const encrypted = bcrypt.hashSync(password, 10)
 
-        await Customer.create({email,password:encrypted,cpf})
 
-        return res.send(201).send();
+        if(!email || !password || !cpf){
+
+            return res.status(400).send("Preencha os dados")
+        }else{
+
+             await Customer.create({email,password:encrypted,cpf})
+
+             const user = await Customer.findOne({attributes:['id','email']},{where:{email}})
+
+            res.render('cadastro')
+
+            
+        }
+
 
     },
 

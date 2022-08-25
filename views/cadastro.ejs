@@ -36,35 +36,34 @@
     <main>
         <div class="id">
                 <i class="fa-solid fa-user"></i>
-                <h1>Identificação</h1>
+                <h1>Identificação </h1>
         </div>
         <div class="margin">
                 <div class="separacao">
                     <section class="personalData">
+                        <form action="/customer/new/:id?_method=PUT" method="post">
                         <h2>Dados Pessoais</h2>
                         <div class="name">
                             <div class="nameID">
                             <div class="inputForm">
-                                <input type="text"  id="inputName" value placeholder="Nome">
+                                <input type="text" name="name" id="inputName" value placeholder="Nome">
                             </div>
                             </div>
-                            <div class="senha">
+                            <div class="nameID">
                                 <div class="inputForm">
-                                    <select name="gender" id="genderSelector">
-                                        <option value="op1">Feminino</option>
-                                        <option value="op2">Masculino</option>
-                                        <option value="op3">Prefiro não informar</option>
-                                    </select>
+                                    <input type="text" name="lastName" id="inputName" value placeholder="Sobrenome">
                                 </div>
+                                </div>
+                            <div class="senha">
                             </div>
                             <div id="birthday">
                           <div class="inputForm">
-                            <input type="date" id="inputBirthday" value placeholder="Data de Nascimento">
+                            <input type="date" id="inputBirthday" name="birthDay" value placeholder="Data de Nascimento">
                           </div>
                             </div>
                             <div id="phone">
                                 <div class="inputForm">
-                                    <input type="tel" id="phone" value placeholder="Telefone">
+                                    <input type="tel" id="phone" name="phone" value placeholder="Telefone">
                                 </div>
                             </div>
                         </div>
@@ -76,31 +75,31 @@
             <div class="preForm">
                 <div class="inputForm">
                     <div class="endereco">
-                    <input type="text" value placeholder="CEP">
+                    <input type="text" name="cep" value placeholder="CEP">
                     </div>
                 </div>
                     <div class="inputForm">
-                        <input type="text" value placeholder="Endereço">
+                        <input type="text" name="address" value placeholder="Endereço">
                     </div>
                 </div>
             <div class="number">
                 <div class="inputForm">
                     <div class="number">
-                        <input type="number" value placeholder="Número">
-                        <input type="text" value placeholder="Complemento">
-                    </div>                    
+                        <input type="text" name="complementary" value placeholder="Complemento">
+                        <input type="text" name="referencePoint" value placeholder="Referencia"> 
+                    </div>
                 </div>
             </div>
             <div class="district">
                 <div class="inputform">
-                    <input type="text" value placeholder="Bairo">
+                    <input type="text" name="neighborhood" value placeholder="Bairro">
                 </div>
             </div>
             <div id="city">
             <div class="inputForm">
                 <div class="city">
-                    <input type="text" value placeholder="Cidade">
-                    <input type="text" value placeholder="Estado">
+                    <input type="text" name="city" value placeholder="Cidade">
+                    <input type="text" name="state" value placeholder="Estado">
                 </div>
             </div>
             </div>
@@ -109,10 +108,11 @@
         
     </div>
     <div id="registration">
-        <button id="registrationButton" class="registrationButton">
+        <button id="registrationButton" type="submit" class="registrationButton">
             <i class="fa-solid fa-address-card"></i>
             <p>Cadastre-se</p>
         </button>
+    </form>
     </div>
     </main>
     <footer>
