@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font:'libre baskerville'
+}
+header{
+    background-image: linear-gradient(#4acee6,rgb(74 206 210 / 0%));
+    }
+    
+main{
+    background-color: #ffe9fe;
+}
+
+
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    table-layout: fixed;
+    
+}
+tr{
+   border: none;
+}
+td{
+    display: table-row;
+    align-items: center;
+    background-color: #fad0f9;
+    color:#1c0b1f;
+    border: #fad0f9;
+    line-height: 2rem;
+    font-size: 1.125rem;
+    margin-left: 0.938rem;
+    
+}
+
+ .edit{
+    background-color: #fad0f9;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    border: #fad0f9;
+    margin: none;
+}
+
+
