@@ -47,8 +47,8 @@ button[type=submit] {
 }
 
 .fa-lock {
-    left: 230px;
-    bottom: 15px;
+    left: 180px;
+    bottom: 7px;
     cursor: pointer;
     position: relative;
 }
