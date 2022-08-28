@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="../public/stylesheets/navbar.css">
     <link rel="stylesheet" href="../public/stylesheets/login.css">
     <link rel="stylesheet" href="../public/stylesheets/footer.css">
-    <script src="cadastro.js" defer></script>
-    <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
+    <script src="../public/javascripts/login.js" defer></script>    
     <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
     <title>Cadastro</title>
 </head>
@@ -18,12 +17,13 @@
             <li>
                 <img src="../public/img/Logo@2x.png" id='logo' alt="Logo">
             </li>
+            <div class="search-box">
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+                <input type="text" class="input-search" placeholder="Buscar...">
+            </div>
             <li>
-                <input id="buscar" type="text"  placeholder="Buscar..."/>
-                <input id="botao" type="submit" value="Ir"/>
-            </li>
-            <li>
-                <div class='ball'></div>
+                <div class='ball'><i class="fa-solid fa-user"></i></div>
+                <i class="fa-solid fa-cart-shopping"></i>
             </li>
         </ul>
     </nav>
@@ -45,29 +45,23 @@
       </nav>
     <main>
         <div class="id">
-                <i class="fa-solid fa-user"></i>
-                <h1>Identificação</h1>
+                <h1><i class="fa-solid fa-user"></i>Login</h1>
         </div>
         <div class="margin">
-                <div class="separacao">
                     <section class="formLogin">
-                        <h2>login</h2>
+                        <!-- <h2>Login</h2> -->
                         <div class="mail">
                             <div class="login">
                             <div class="inputForm">
                                 <form action="/customer/login" method="post">
-                                <input type="text"  name="email" id="inputUsuarioLogin" value placeholder="Email">
+                                      <input id="enter" type="text" placeholder="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
                             </div>
                             </div>
-                            <div class="senha">
-                                <div class="inputForm">
-                                    <input type="password" name="password" id="inputSenhaLogin" class="senha" value placeholder="Senha">
-                                    <button class="senhaOlhoLogin" id="olho">
-                                        <i class="fa-solid fa-eye"></i>
-                                    </button>
-                                </div>
+                            <div class="inputBox">
+                                <input type="password" name="" placeholder="Senha" id="password">
+                                <div><i id="toggle" class="fa-solid fa-eye"></i></div>
+                            </div>
 
-                            </div>
                             <div id="botaoLogin">
                             <button id="botaoLogin" type="submit" class="botaoId">
                                 <i class="fa-solid fa-right-to-bracket"></i>
@@ -76,16 +70,14 @@
                         </form>
                             </div>
                             <div class="esquecimento">
-                            <div id="esqueciEmail" class="esqueciES">Esqueci meu login
-                            </div>
-                            <div id="esqueciSenha" class="esqueciES">Esqueci a minha Senha
-                            </div>
+                            <div id="esqueciEmail" class="esqueciES">Esqueci meu login</div>
+                            <div id="esqueciSenha" class="esqueciES">Esqueci a minha Senha</div>
                             </div>
                         </div>
                     </section>
-                </div>
             </div>
-    </main>
+        </main>
+    </body>
     <footer>
         <img src="./public/img/Logo@2x.png" alt="">
         <div class="info">
@@ -105,5 +97,4 @@
             </div>
         </div>
     </footer>
-</body>
 </html>
