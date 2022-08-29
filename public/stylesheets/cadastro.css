@@ -3,146 +3,166 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
+header{
     background-image: linear-gradient(rgb(74, 206, 230,1),rgb(74 206 210 / 0%));
     }
 
-  main{
-    background-color: #fefefe;
-    padding: 14px;
-    width: 100vw;
-  }
-  h2{
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.6rem;
-  }
-  .margin{
+    main{
+        background-color: #fefefe;
+        padding: 0.875rem;
+        width: 100vw;
+      }
+      h1{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       color:#352634;
+      }
+      h2{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.6rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color:#352634;
+      }
+      .margin{
+        display: flex;
+        flex: 1 1 0%;
+        flex-direction: row;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .separacao{
+        display: flex;
+        flex: 1 1 0%;
+        -webkit-box-pack: center;
+        justify-content: center;
+    
+      }
+      input{
+        position: relative;
+        width: 16.375rem;
+        height: 2.5rem;
+        border-style: solid;
+        border-width: 0.0625rem;
+        border-radius: 1.25rem;
+        border-color: #d1d1d1;
+        font-size: 1.5rem;
+    }
+    .inputForm{
+        margin-bottom: 0.156rem;
+    }
+    .senha{
+        position: relative;
+    }
+    
+    .senha i{
+        width: 0.875rem;
+        height: 0.875rem;
+        fill: none;
+        border: none;
+    }
+
+    .preform{
+        position: relative;
+    }
+    .emailCadastro{
+        position: relative;
+    }
+    .senhaCadastro{
+        position: relative;
+    }
+    .senhaOlho{
+        position: absolute;
+        border: none;
+        background: none;
+        cursor: pointer;
+        left: 14.875rem;
+        top: 0.688rem;
+    }
+    .confirmaSenha{
+        position: relative;
+    }
+    .senhaOlho2{
+        position: absolute;
+        border: none;
+        background: none;
+        cursor: pointer;
+        left: 14.875rem;
+        top: 0.688rem;
+    }
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    .number{
+        display: flex;
+    }
+    .city{
+        display: flex;
+    }
+    #registration{
+        display: flex;
+        justify-content: center;
+    }
+    .registrationButton{
+        height: 2rem;
+        width: 35%;
+        display: flex;
+        -webkit-box-pack: center;
+        align-items: center;
+        justify-content: center;
+        border: 0.063rem solid #50cee6;
+        border-radius: 1rem;
+        background-color: #fefefe;
+        margin-top: 1rem;
+        user-select: none;
+        font-size: 1.65rem;
+        font-weight: 700;
+        transition: background-color 0.3s ease 0s;
+        cursor: pointer;
+    }
+    .registrationButton p:hover{
+        color: #f051e8;
+    }
+
+.margin2{
     display: flex;
     flex: 1 1 0%;
     flex-direction: row;
-    margin-top: 48px;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .separacao{
-    display: flex;
-    flex: 1 1 0%;
-    -webkit-box-pack: center;
-    justify-content: center;
-    max-width: 63.125rem;
-  }
 
-input{
-    position: relative;
-    width: 262px;
-    height: 36px;
-    border-style: solid;
-    border-width: 0.0625rem;
-    border-radius: 0.25rem;
-    border-color: gray;
-}
-.inputForm{
-    margin-bottom: 2.5px;
-}
-.senha{
-    position: relative;
-}
-.senhaOlhoLogin{
-    position: absolute;
-    left: 236px;
-    background: none;
-    cursor: pointer;
-    border:none;
-    top: 11px;
     
-}
-.senha i{
-    width: 14;
-    height: 14;
-    fill: none;
-    border: none;
-}
-
-.divisoria{
-    display: flex;
-    width: 2px;
-    background-color: blueviolet;
-    margin: 0 32px;
-}
-
-.preform{
-    position: relative;
-}
-
-.senhaCadastro{
-    position: relative;
-}
-.senhaOlho{
-    position: absolute;
-    border: none;
-    background: none;
-    cursor: pointer;
-    left: 238px;
-    top: 11px;
-}
-.confirmaSenha{
-    position: relative;
-}
-.senhaOlho2{
-    position: absolute;
-    border: none;
-    background: none;
-    cursor: pointer;
-    left: 238px;
-    top: 11px;
-}
-.doc{
-    position: relative;
-    margin-bottom: 16px;
-}
-.doc input{
-background: nones;
-}
-#botaoPreCadastro{
-position: relative;
-margin-bottom: 1rem;
-justify-content: center;
-align-items: center;
-}
-#botaoPreCadastro i{
-    display: flex;
-    align-items: center;
-    margin: 1px;
-}
-.botaoPreCadastro{
-  width: 100%;  
-  height: 32px;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgb(80, 206, 230,1);
-  border-radius: 16px;
-  background-color: #fefefe;
-  background: none;
-  user-select: none;
-  font-size: 18px;
-  font: 700;
-  font-weight: 700;
-}
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-@media(max-width: 590px){
-    .separacao{
-        display: table-row;
+    @media(max-width: 885px){
+        .separacao{
+            display: table-row;
+        }
+        .margin2{
+            display: table-row;
+        }
+        .number{
+            display: table-row;
+        }
+        .city{
+            display: table-row;
+        }
+        .registrationButton{
+            font-size: 1rem;
+        }
     }
-}
