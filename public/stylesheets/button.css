@@ -1,7 +1,7 @@
 .button{
     border-style: none;
-    height: 40px;
-    padding: 6px 12px;
+    height: 2.5rem;
+    padding: 0.375rem 0.75rem;
     background-color: black;
     color: white;
     font-size: 1rem;
@@ -17,31 +17,33 @@
 
 .button.blue{
     background-color: #1FB6FF;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 
     
 }
 
 button.green{
     background-color: #13CE66;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 button.red{
     background-color: #FF4949;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 .button:hover{
-    box-shadow: inset 200px 0 0 #00000055;
+    box-shadow: inset 12.5rem 0 0 #00000055;
 }
+
+
 
 @media(max-width:480px){
     .button.mobile{
         color:transparent;
         font-size:0;
-        width:50px;
-        height:50px;
+        width: 3.125rem;
+        height: 3.125rem;
         border-radius: 50%;
         position:fixed;
         top: 90vh;
