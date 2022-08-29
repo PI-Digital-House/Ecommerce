@@ -9,7 +9,7 @@ let args = {
   nVlComprimento: '20',
   nVlAltura: '20',
   nVlLargura: '20',
-  nCdServico: ['04014', '04510'], //Array com os códigos de serviço
+  nCdServico: ['04014' /* SEDEX */, '04510'/* PAC */], //Array com os códigos de serviço
   nVlDiametro: '0',
 };
 
