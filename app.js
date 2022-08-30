@@ -53,18 +53,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/customer', customerRouter);
 app.use('/', homeRouter);
 app.use('/adm', admRouter);
-<<<<<<< HEAD
-// app.use('/products', registerProductsRouter);
-// app.use('/cart', cartRouter);
-// app.use('/sales', salesPanelRouter);
-=======
-app.use('/products', registerProductsRouter);
-app.use('/cart', cartRouter);
+app.use('/customer', cartRouter);
 app.use('/sales', salesPanelRouter);
 app.use('/credit', creditCardRouter);
 app.use('/order', orderRouter);
->>>>>>> 92da6d6b1dd997ff0cc61f99995689699dd4049c
-
+// app.use('/products', registerProductsRouter);
+// app.use('/sales', salesPanelRouter);
 
 
 
