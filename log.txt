@@ -668,3 +668,5 @@ O usuário entro na url:/
 O usuário entro na url:/
 O usuário entro na url:/
 O usuário entro na url:/
+O usuário entro na url:/
+O usuário entro na url:/favicon.ico
