@@ -2,9 +2,9 @@
 {
 	background: #0099CC;
 	color: #FFF;
-	height: 45px;
-	padding-left: 18px;
-	border-radius: 0px;
+	height: 2.813rem;
+	padding-left: 1.125rem;
+	border-radius: 0rem;
 }
 #menu ul, #menu li
 {
@@ -25,16 +25,16 @@
 #menu a
 {
 	display: block;
-	line-height: 45px;
-	padding: 0 14px;
+	line-height: 2.813rem;
+	padding: 0 0.875rem;
 	text-decoration: none;
 	color: #FFFFFF;
-	font-size: 16px;
+	font-size: 1rem;
 }
 #menu a.dropdown-arrow:after
 {
 	content: "\25BE";
-	margin-left: 5px;
+	margin-left: 0.313rem;
 }
 #menu li a:hover
 {
@@ -46,7 +46,7 @@
 	display: none;
 	margin: 0;
 	padding: 0;
-	height: 45px;
+	height: 2.813rem;
 	width: 100%;
 	opacity: 0;
 	cursor: pointer
@@ -54,22 +54,22 @@
 #menu label
 {
 	display: none;
-	line-height: 45px;
+	line-height: 2.813rem;
 	text-align: center;
 	position: absolute;
-	left: 35px
+	left: 2.188rem
 }
 #menu label:before
 {
 	font-size: 1.6em;
-	content: "\2261"; 
-	margin-left: 20px;
+	content: "\2261";
+	margin-left: 1.25rem;
 }
 #menu ul.sub-menus
 {
 	height: auto;
 	overflow: hidden;
-	width: 170px;
+	width: 10.625rem;
 	background: #444444;
 	position: absolute;
 	z-index: 99;
@@ -83,7 +83,7 @@
 #menu ul.sub-menus a
 {
 	color: #FFFFFF;
-	font-size: 16px;
+	font-size: 1rem;
 }
 #menu li:hover ul.sub-menus
 {
@@ -99,7 +99,7 @@
 	#menu {position:relative}
 	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
 	#menu ul.sub-menus {width:100%;position:static;}
-	#menu ul.sub-menus a {padding-left:30px;}
+	#menu ul.sub-menus a {padding-left:1.875rem;}
 	#menu li {display:block;float:none;width:auto;}
 	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
 	#menu input {z-index:4}
