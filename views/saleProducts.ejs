@@ -5,11 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/saleProducts.css">
-    <link rel="stylesheet" href="../public/stylesheets/footer.css">
+    <link rel="stylesheet" href="../public/stylesheets/public/navbar.css">
+    <link rel="stylesheet" href="../public/stylesheets/public/footer.css">
     <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
     <title>saleProducts</title>
 </head>
 <body>
+  <nav>
+    <ul>
+        <li>
+            <img src="../public/img/Logo@2x.png" id='logo' alt="Logo">
+        </li>
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Buscar...">
+        </div>
+        <li>
+            <div class='ball'><i class="fa-solid fa-user"></i></div>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </li>
+    </ul>
+</nav>
+<nav id='menu'>
+    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+    <ul>
+      <li><a href='http://home/demoner/workbench/Ecommerce/views/home.ejs'>Home</a></li>
+      <li><a class='dropdown-arrow' href='http://'>Produtos</a>
+        <ul class='sub-menus'>
+          <li><a href='http://'>Smartphone</a></li>
+          <li><a href='http://'>Acessórios</a></li>
+          <li><a href='http://'>Tablet</a></li>
+        </ul>
+      </li>
+      <li><a href='http://home/demoner/workbench/Ecommerce/views/salesPanel.ejs'>Ofertas</a></li>
+      <li><a href='http://'>Categoria</a></li>
+    </ul>
+  </nav>
     <section id="gallery">
         <div class="card">
             <img src="./img/console 2.png" alt="">
