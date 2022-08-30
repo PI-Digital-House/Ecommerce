@@ -4,11 +4,10 @@ const Product = models.Product
 
 
 module.exports ={
-    async index(req,res ){
-        const results =  await Product.findAll();
+    async admproducts(req,res ){
+        const prod =  await Product.findAll();
 
-
-        return res.render('registerProducts.ejs', {results})
+        return res.render('registerProduct',{prod})
 
 
     },
@@ -19,13 +18,19 @@ module.exports ={
             price,
             weight,
             categoryId,
+            size,
             brandID,
-            amount} = req.body
+            model,
+            amount,
+            description,
+            color,
+            follow
+            } = req.body
 
 
-            await Product.create({name,price,weight,categoryId,brandID,amount})
+            await Product.create({name,price,weight,categoryId,size,brandID,model,amount,description,color,follow})
 
-            res.status(201).send();
+            res.redirect('/adm/product')
     },
 
     async update(req,res){
@@ -56,7 +61,9 @@ module.exports ={
     async delete(req,res){
         const {id} = req.params
 
-        await Product.detroy({where:{id}});
+        await Product.destroy({where:{id}});
+
+        res.redirect('/adm/product')
 
     }
 }

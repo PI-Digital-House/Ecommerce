@@ -25,7 +25,7 @@ router.put('/category/:id', categoryController.update);
 router.delete('/category/:id', categoryController.delete);
 
 //Product
-router.get('/product', productController.index)
+router.get('/product', productController.admproducts)
 router.post('/product', productController.create);
 router.put('/product/:id', productController.update);
 router.delete('/product/:id', productController.delete);
