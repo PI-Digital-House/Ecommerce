@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/stylesheets/navbar.css">
     <link rel="stylesheet" href="../public/stylesheets/login.css">
-    <link rel="stylesheet" href="../public/stylesheets/footer.css">
+    <link rel="stylesheet" href="../public/stylesheets/public/navbar.css">
+    <link rel="stylesheet" href="../public/stylesheets/public/search.css">
+    <link rel="stylesheet" href="../public/stylesheets/public/footer.css">
     <script src="../public/javascripts/login.js" defer></script>
     <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
     <title>Login</title>
@@ -53,8 +54,9 @@
                         <div class="mail">
                             <div class="login">
                             <div class="inputForm">
+
                                 <form action="/customer/login" method="post">
-                                      <input id="enter" type="text" placeholder="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+                                      <input id="enter" type="text" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
                             </div>
                             </div>
                             <div class="inputBox">
@@ -70,7 +72,7 @@
                         </form>
                             </div>
                             <div class="esquecimento">
-                            <div id="esqueciEmail" class="esqueciES">Esqueci meu login</div>
+                            <div id="esqueciEmail" class="esqueciES">Criar cadastro</div>
                             <div id="esqueciSenha" class="esqueciES">Esqueci a minha Senha</div>
                             </div>
                         </div>
