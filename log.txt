@@ -669,6 +669,7 @@ O usuário entro na url:/
 O usuário entro na url:/
 O usuário entro na url:/
 O usuário entro na url:/
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 O usuário entro na url:/customer/login
@@ -1818,3 +1819,7 @@ O usuário entro na url:/credit
 O usuário entro na url:/order
 >>>>>>> 92da6d6b1dd997ff0cc61f99995689699dd4049c
 >>>>>>> origin
+=======
+O usuário entro na url:/
+O usuário entro na url:/favicon.ico
+>>>>>>> 03e0e51 (.)
