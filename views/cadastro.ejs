@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -147,4 +148,157 @@
         </div>
     </footer>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="stylesheets/cadastro.css">
+    <script src="cadastro.js" defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <img src="img/Logo.png" id='logo' alt="Logo">
+            </li>
+            <li>
+                <input id="buscar" type="text"  placeholder="Buscar..."/>
+                <input id="botao" type="submit" value="Ir"/>
+                <label for="lupa" class="lupa">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </label>
+            </li>
+            <li>
+                <i class="fa-solid fa-user"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="id">
+        
+                <h1> <i class="fa-solid fa-id-card"></i> Identificação </h1>
+        </div>
+        <div class="margin">
+                <div class="separacao">
+                    <section class="personalData">
+                        <form action="/customer/new" method="post">
+                        <h2><i class="fa-solid fa-user"></i> Dados Pessoais</h2>
+                        <div class="name">
+                            <div class="nameID">
+                            <div class="inputForm">
+                                <input type="text" name="name" id="inputName" value placeholder="Nome">
+                            </div>
+                            </div>
+                            <div class="nameID">
+                                <div class="inputForm">
+                                    <input type="text" name="lastName" id="inputName" value placeholder="Sobrenome">
+                                </div>
+                                </div>
+                                <div class="inputForm">
+                                    <input type="text" name="cpf" id="inputCpf" value placeholder="CPF">
+                                </div>
+                                <div class="inputForm">
+                                    <input type="email" name="email" id="inputEmail" value placeholder="Email">
+                                </div>
+                                </div>
+
+                                <div class="senhaCadastro">
+                                    <div class="inputForm">
+                                        <input type="password" name="password" id="inputSenhaLogin" class="senha" value placeholder="Crie sua senha">
+                                        <button class="senhaOlho" id="olho">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            <div class="confirmaSenha">
+                                <div class="inputForm">
+                                    <input type="password" class="senha" value placeholder="Confirme a senha">
+                                    <button class="senhaOlho2" id="olho">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="birthday">
+                                <div class="inputForm">
+                                  <input type="date" id="inputBirthday" name="birthDay" value placeholder="Data de Nascimento">
+                                </div>
+                                  </div>
+                                  <div id="phone">
+                                      <div class="inputForm">
+                                          <input type="tel" id="phone" name="phone" value placeholder="Telefone">
+                                      </div>
+                                  </div>
+                </div>
+        </div>
+                        
+                    </section>
+
+       
+        <div class="divisoria"></div>
+        
+        <section id="endereco" class="enderecoCadastro">
+            <h2><i class="fa-solid fa-house-chimney-user"></i> Endereço de Cadastro</h2>
+            <div class="margin2">
+                <div class="endereco">
+            <div class="preForm">
+                <div class="inputForm">
+                    <div class="endereco">
+                    <input type="text" name="cep" value placeholder="CEP">
+                    </div>
+                </div>
+                    <div class="inputForm">
+                        <input type="text" name="address" value placeholder="Endereço">
+                    </div>
+                </div>
+            <div class="number">
+                <div class="inputForm">
+                    <div class="number">
+                        <input type="text" name="complementary" value placeholder="Complemento">
+                        <input type="text" name="referencePoint" value placeholder="Referencia"> 
+                    </div>
+                </div>
+            </div>
+            <div class="district">
+                <div class="inputform">
+                    <input type="text" name="neighborhood" value placeholder="Bairro">
+                </div>
+            </div>
+            <div id="city">
+            <div class="inputForm">
+                <div class="city">
+                    <input type="text" name="city" value placeholder="Cidade">
+                    <input type="text" name="state"value  placeholder="Estado">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </section>
+        
+    </div>
+    <div id="registration">
+        <button id="registrationButton" type="submit" class="registrationButton">
+            <i class="fa-solid fa-address-card"></i>
+            <p>Cadastre-se</p>
+        </button>
+    </form>
+    </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+>>>>>>> origin
 </html>

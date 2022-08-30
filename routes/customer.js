@@ -1,18 +1,18 @@
 const customerController = require('../controllers/customerController')
 const express = require('express');
-// const auth = require('../middlewares/auth')
+const auth = require('../middlewares/auth')
 // const validacoes = require('../middlewares/expressValidator')
 const router = express.Router();
 
-router.get('/login',customerController.getlogin)
-router.post('/login', customerController.login)
+router.get('/',customerController.getlogin)
+router.get('/login/:id',customerController.showCustomer)
+router.post('/', customerController.login)
 
-router.get('/new',customerController.new)
+router.get('/new',customerController.getRegister)
 router.post('/new',customerController.create)
 
-router.put('/new/:id', customerController.update)
-
-router.delete('/:id',customerController.delete)
+router.put('/login/:id',customerController.update)
+router.delete('/login/:id',customerController.delete)
 
 
 

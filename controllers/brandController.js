@@ -1,4 +1,5 @@
 
+const { json } = require('sequelize');
 const sequelize = require('sequelize');
 const models = require('../models')
 const Brand = models.Brand
@@ -8,7 +9,6 @@ module.exports ={
     async index(req,res ){
         const results =  await Brand.findAll();
 
-        return res.render('registerProducts.ejs', {results})
 
     },
 
