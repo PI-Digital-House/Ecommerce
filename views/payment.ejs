@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/stylesheets/payment.css">
-    <link rel="stylesheet" href="../public/stylesheets/footer.css">
+    <link rel="stylesheet" href="../public/stylesheets/public/footer.css">
+    <link rel="stylesheet" href="../public/stylesheets/public/search.css">
+    <link rel="stylesheet" href="../public/stylesheets/public/navbar.css">
     <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
     <title>Payment</title>
 </head>
@@ -25,64 +27,72 @@
             </li>
         </ul>
     </nav>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='http://'>Home</a></li>
+          <li><a class='dropdown-arrow' href='http://'>Produtos</a>
+            <ul class='sub-menus'>
+              <li><a href='http://'>Smartphone</a></li>
+              <li><a href='http://'>Acessórios</a></li>
+              <li><a href='http://'>Tablet</a></li>
+            </ul>
+          </li>
+          <li><a href='http://'>Ofertas</a></li>
+          <li><a href='http://'>Categoria</a></li>
+        </ul>
+      </nav>
     <main>
         <section class="custumer">
             <div class="userName">
-                <table id="user" border="0">
+                <th id="user" border="0">
                     <row>
                         <rowhead> <strong>Nome</strong>
                             <td><%= custumer.name %><td>
                         </rowhead>
                     </row>
-                </table>
+                </th>
             </div>
             <div class="userAdress">
-                <table id="user" border="0">
+                <th id="user" border="0">
                     <row>
                         <rowhead><strong>CPF</strong>
                             <td><%= custumer.cpf %><td>
                         </rowhead>
                     </row>
-                </table>
+                </th>
             </div>
             <div class="userCard">
-                <table id="user" border="0">
+                <th id="user" border="0">
                     <row>
                         <rowhead><strong>Endereço</strong>
                             <td><%= custumer.address %><td>
                         </rowhead>
                     </row>
-                </table>
+                </th>
             </div>
         </section>
         <div class="payment">
-            <p>Se for colocar outro metodo, colocar o if</p>
         </div>
         <section class="card">
             <form action="" method="post">
                 <div id="card">
                     <h2>Pagamento</h2>
-                    <div class="typesCard">
-                    <input type="radio" value="cards">
-                    <label for="cards">Cartão de crédito
-                        <i class="fa-brands fa-cc-visa"></i>
-                        <i class="fa-brands fa-cc-mastercard"></i>
-                    </label>
-                    </div>
                 </div>
                 <div class="whatCard">
-                    <input type="number" name="numberCard" placeholder="Número do Cartão"><i class="fa-solid fa-lock"></i>
-                    <input type="month" name="expirationCard" placeholder="Validade do Cartão">
+                    <input class="whatCard" type="number" name="numberCard" placeholder="Número do Cartão"><i class="fa-solid fa-lock"></i>
+                    <input class="whatCard" type="month" name="expirationCard" placeholder="Validade do Cartão">
                     <br>
-                    <input type="number" name="CVV" placeholder="CVV">
+                    <input class="whatCard" type="number" name="CVV" placeholder="CVV">
                     <br>
-                    <input type="text" name="adressCard" placeholder="Endereço do Cartão">
+                    <input class="whatCard" type="text" name="adressCard" placeholder="Endereço do Cartão">
                     <br>
                     <button type="submit">Comprar Agora</button>
                 </div>
             </div>
         </form>
     </section>
+</main>
     <!-- footer -->
     <footer>
         <img src="./public/img/Logo@2x.png" alt="">
@@ -103,6 +113,6 @@
         </div>
     </footer>
     <!-- footer -->
-    </main>
+    
 </body>
 </html>
