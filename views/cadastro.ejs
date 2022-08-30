@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../public/stylesheets/public/navbar.css">
     <link rel="stylesheet" href="../public/stylesheets/public/btn.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;700&display=swap" rel="stylesheet">
-    <script src="cadastro.js" defer></script>
+    <script src="../public/javascripts/login.js" defer></script>
     <script src="../public/javascripts/checkCep.js" defer></script>
     <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -69,6 +69,19 @@
                                     <input class="inputForm" type="text" name="lastName" id="inputName" value placeholder="Sobrenome">
                                 </div>
                                 </div>
+
+                                <div class="inputBox">
+                                    <input class="inputForm" type="text" name="cpf" id="inputCpf" value placeholder="CPF">
+                                </div>
+                                <div class="inputBox">
+                                    <input class="inputForm" type="email" name="email" id="inputEmail" value placeholder="Email">
+                                </div>
+                                
+                                <div>
+                                    <input type="password" name="" placeholder="Senha" id="password">
+                                    <i id="toggle" class="fa-solid fa-eye"></i>
+                                </div>
+
                             <div class="senha">
                             </div>
                             <div id="birthday">
@@ -81,7 +94,6 @@
                                     <input class="inputForm" type="tel" id="phone" name="phone" value placeholder="Telefone">
                                 </div>
                             </div>
-                        </div>
                     </section>
                 </div>
             </div>
