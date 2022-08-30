@@ -1,3 +1,46 @@
-option{
-    width: 0.625rem;
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+
+nav
+{
+  background-image: linear-gradient(#4acee6,rgba(74, 206, 210, 0));
+}
+
+ul, li
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.313rem;
+  text-decoration: none;
+}
+
+section
+{
+    font-size:16px;
+    position: relative;
+    border-color:#cccccc;
+}
+
+.inputForm
+{
+    font-size:16px;
+    border-color:#cccccc;
+    padding:12px; border-width:2px;
+    border-radius:13px; border-style:solid;
+    text-shadow:0px 0px 0px #2a2a2abd;
+    box-shadow: 0px 0px 5px 0px #50cee6;
+}
+
+.row1
+{
+    position: relative;
+    display: flex;
+    width: 80%;
+
 }
