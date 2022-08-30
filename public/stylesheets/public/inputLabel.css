@@ -3,7 +3,7 @@
     border-color:#cccccc;
     padding:12px; border-width:2px;
     border-radius:13px; border-style:solid;
-    text-shadow:0px 0px 0px rgba(42,42,42,.74);
+    text-shadow:0px 0px 0px #2a2a2abd;
     box-shadow: 0px 0px 5px 0px #50cee6;
 }
 .css-input:focus {
