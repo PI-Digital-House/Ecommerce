@@ -15,6 +15,8 @@ const admRouter = require('./routes/adm')
 const registerProductsRouter = require('./routes/registerProducts')
 const cartRouter = require('./routes/cart.js')
 const salesPanelRouter = require('./routes/salesPanel.js')
+const creditCardRouter = require('./routes/creditCard.js')
+const orderRouter = require('./routes/order.js')
 
 //Importing Midlleware
 // const cookieMiddleware = require('./middlewares/cookies')
@@ -54,6 +56,8 @@ app.use('/adm', admRouter);
 app.use('/products', registerProductsRouter);
 app.use('/cart', cartRouter);
 app.use('/sales', salesPanelRouter);
+app.use('/credit', creditCardRouter);
+app.use('/order', orderRouter);
 
 
 
