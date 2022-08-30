@@ -21,7 +21,7 @@ header
     width: 4.375rem;
 
     background: #424242;
-    box-shadow: 0.625rem 0 0 rgb(196,19,167);
+    box-shadow: 0.625rem 0 0 #c413a7;
     overflow-x: hidden;
     transition: 0.5s;
 }
