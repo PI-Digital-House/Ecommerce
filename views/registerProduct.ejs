@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="button.css">
-    <link rel="stylesheet" href="records.css">
-    <link rel="stylesheet" href="modal.css">
-    <link rel='stylesheet' href='NavBar.css'>
-    <link rel='stylesheet' href='footer.css'>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/button.css">
+    <link rel="stylesheet" href="/stylesheets/records.css">
+    <link rel="stylesheet" href="/stylesheets/modal.css">
+    <link rel='stylesheet' href='/stylesheets/NavBar.css'>
+    <link rel='stylesheet' href='/stylesheets/footer.css'>
     <script src="https://kit.fontawesome.com/794f38cff9.js" crossorigin="anonymous"></script>
-    <script src="registerProduct.js" defer></script>
+    <script src="/javascripts/rProduct.js" defer></script>
     <title>Cadastrar Produtos</title>
   </head>
   <body>
@@ -38,9 +38,9 @@
   <main>
     <form>
     <div class="button-header">
-      <button type="submit" class="button blue mobile" id="cadastrarProduto">Cadastrar Produto</button>
-      <button type="submit" class="button blue mobile" id="cadastrarCategoria">Cadastrar Categoria</button>
-      <button type="submit" class="button blue mobile" id="cadastrarMarca">Cadastrar Oferta</button>
+      <button type="button" class="button blue mobile" id="cadastrarProduto">Cadastrar Produto</button>
+      <button type="button" class="button blue mobile" id="cadastrarCategoria">Cadastrar Categoria</button>
+      <button type="button" class="button blue mobile" id="cadastrarMarca">Cadastrar Oferta</button>
       <input type="text" class='searchProducts' id="search-form" placeholder="Search..">
       <button type="submit" class="button blue mobile" id="lupa"><i class="fa-brands fa-searchengin"></i></button>
     </form>
@@ -66,23 +66,25 @@
               </tr>
           </thead>
           <tbody>
+            <% for (let i = 0; i < prod.length; i++) { %>
               <tr>
-                  <td>Smartphone Samsung Galaxy A03</td>
-                  <td>R$40,00</td>
-                  <td>1000</td>
-                  <td><img style="
-                  width: 6.25rem;
-                  height: 6.25rem;
-                  margin-top: 0.438rem;" src="https://images-americanas.b2w.io/produtos/01/00/img/4342102/7/4342102701_1GG.jpg"
-                      alt="Smartphone Samsung Galaxy A03 Core 32GB 4G Wi-Fi Tela 6.5'' Dual Chip 2GB RAM Câmera 8MP + Selfie 5MP - Preto"></td>
-                      <td>Celular</td>
-                      <td>
-                        <form action="">
-                      <button type="submit" class="button green">editar</button>
-                      <button type="submit" class="button red">excluir</button>
-                    </form>
+                  <td><%= prod[i].name %></td>
+                  <td><%= prod[i].price %></td>
+                  <td><%= prod[i].weight %></td>
+                  <td><%= prod[i].size %></td>
+                  <td><%= prod[i].brandID %></td>
+                  <td><%= prod[i].model %></td>
+                  <td><%= prod[i].amount %></td>
+                  <td><%= prod[i].description %></td>
+                  <td><%= prod[i].color %></td>
+                  <td><%= prod[i].follow %></td>
+                  <td><%= prod[i].categoryId %></td>
+                  <td>
+                    <button type="submit" class="button green">editar</button>
+                    <button class="button red" value="<%= prod[i].id %>" onclick="chamarFetch(value)">Excluir</button>
                   </td>
               </tr>
+            <% } %>
           </tbody>
       </table>
       <div class="modal" id="modal">
@@ -103,7 +105,7 @@
                   <input type="text" name="description" id="descricao" class="modal-field" placeholder="Descrição" required>
                   <input type="text" name="color" id="cor" class="modal-field" placeholder="Cor" required>
                   <input type="text" name="follow" id="segue" class="modal-field" placeholder="Segue" required>
-                  <input type="image" name="image" id="imagem" class="modal-field-large" placeholder="Imagem" required>
+                  <!-- <input type="file" name="image" id="imagem" class="modal-field-large" placeholder="Imagem" required> -->
                   <footer class="modal-footer">
                       <button type="submit" id="salvar"class="button green">Salvar</button>
                       <button id="cancelar"class="button blue">Cancelar</button>
@@ -112,7 +114,7 @@
               </form>
           </div>
       </div>
-      
+
   <!-- Modal Categoria-->
 
        <div class="modal" id="modalCat">
@@ -121,13 +123,13 @@
               <h2>Nova Categoria</h2>
                 <span class="modal-close" id="modalCloseCat">&#10006;</span>
                 </header>
-                <form id="form" class="modal-form" action="/adm/product" method="post">
+                <form id="form" class="modal-form" action="/adm/category" method="post">
                  <input type="text" name="name" id="nome" data-index="new" class="modal-field-large" placeholder="Nome da Categoria" required>
                 <footer class="modal-footer">
                  <button type="submit" id="salvar"class="button green">Salvar</button>
                  <button id="cancelar"class="button blue">Cancelar</button>
                   </footer>
-                  
+
                   </form>
             </div>
         </div>
@@ -171,5 +173,17 @@
           </div>
       </div>
   </footer>
+      <script>
+        function chamarFetch(id){
+          fetch(`http://localhost:3000/adm/product/${id}`, {method: "delete"})
+
+          .then( res =>
+          document.location.reload(true)
+        )
+        .catch ( e =>
+         console.log(e))
+
+        }
+      </script>
   </body>
   </html>

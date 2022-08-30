@@ -41,7 +41,7 @@
         <div class="margin">
                 <div class="separacao">
                     <section class="personalData">
-                        <form action="/customer/new/:id?_method=PUT" method="post">
+                        <form action="/customer/new" method="post">
                         <h2><i class="fa-solid fa-user"></i> Dados Pessoais</h2>
                         <div class="name">
                             <div class="nameID">
@@ -55,7 +55,7 @@
                                 </div>
                                 </div>
                                 <div class="inputForm">
-                                    <input type="number" name="cpf" id="inputCpf" value placeholder="CPF">
+                                    <input type="text" name="cpf" id="inputCpf" value placeholder="CPF">
                                 </div>
                                 <div class="inputForm">
                                     <input type="email" name="email" id="inputEmail" value placeholder="Email">
@@ -72,7 +72,7 @@
                                 </div>
                             <div class="confirmaSenha">
                                 <div class="inputForm">
-                                    <input type="password" name="password" class="senha" value placeholder="Confirme a senha">
+                                    <input type="password" class="senha" value placeholder="Confirme a senha">
                                     <button class="senhaOlho2" id="olho">
                                         <i class="fa-solid fa-eye"></i>
                                     </button>
@@ -127,7 +127,7 @@
             <div class="inputForm">
                 <div class="city">
                     <input type="text" name="city" value placeholder="Cidade">
-                    <input type="text" name="state" value placeholder="Estado">
+                    <input type="text" name="state"value  placeholder="Estado">
                 </div>
             </div>
             </div>

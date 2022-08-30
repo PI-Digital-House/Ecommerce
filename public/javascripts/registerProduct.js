@@ -171,7 +171,7 @@ const editDelete = (event) => {
 updateTable()
 
  //Eventos
-document.getElementById('cadastrarCliente')
+document.getElementById('cadastrarProduto')
     .addEventListener('click', openModal) 
 
 document.getElementById('cadastrarCategoria')
