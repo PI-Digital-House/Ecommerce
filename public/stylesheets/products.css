@@ -3,6 +3,7 @@
 margin: 0;
 padding: 0px;
 box-sizing: border-box;
+font-family: 'Libre Baskerville', serif;
 }
 
 nav
@@ -48,6 +49,7 @@ header
     position: relative;
     align-items: center;
     justify-content: center;
+    /* gap: 0.9375rem; */
     margin-bottom: 6.25rem;
     max-height: 37.5rem;
 }
@@ -145,6 +147,7 @@ header
 
 .product-details-buttons
 {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;

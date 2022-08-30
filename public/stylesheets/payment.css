@@ -3,6 +3,7 @@
 margin: 0px;
 padding: 0px;
 box-sizing: border-box;
+font-family: 'Libre Baskerville', serif;
 }
 
 nav
@@ -63,7 +64,7 @@ h2 {
 }
 
 .fa-lock {
-    left: 250px;
+    left: 230px;
     bottom: 30px;
     cursor: pointer;
     position: relative;
