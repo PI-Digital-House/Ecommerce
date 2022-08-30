@@ -28,29 +28,29 @@ input {
     display: flex;
     position: relative;
     text-shadow:0px 0px 0px #2a2a2abd;
-    box-shadow: 0px 0px 5px 0px #50cee6;
+    box-shadow: 0px 0px 0.313rem 0px #50cee6;
 
 }
 input[type=radio] {
     border: 0px;
     width: 10%;
     height: 1.3em;
-    top: 35px;
+    top: 2.188rem;
 }
 
 button[type=submit] {
-    padding: 12px;
+    padding: 0.75rem;
     position: relative;
 
 }
 
 h2 {
-  padding: 5px;
+  padding: 0.313rem;
 }
 
 .custumer{
-  padding: 5px;
-  margin: 5px;
+  padding: 0.313rem;
+  margin: 0.313rem;
 }
 
 .typesCard {
@@ -58,13 +58,13 @@ h2 {
     flex-direction: row;
 }
 .card {
-    padding: 5px;
-    margin: 5px;
+    padding: 0.313rem;
+    margin: 0.313rem;
 }
 
 .fa-lock {
-    left: 230px;
-    bottom: 30px;
+    left: 14.375rem;
+    bottom: 1.875rem;
     cursor: pointer;
     position: relative;
 }
@@ -72,11 +72,11 @@ h2 {
 
 .whatCard{
     display: table;
-    padding: 5px;
-    font-size:16px;
+    padding: 0.313rem;
+    font-size:1rem;
     border-color:#cccccc;
-    padding:12px; border-width:2px;
-    border-radius:13px; border-style:solid;
+    padding:0.75rem; border-width:0.125rem;
+    border-radius:0.813rem; border-style:solid;
     text-shadow:0px 0px 0px #2a2a2abd;
-    box-shadow: 0px 0px 5px 0px #50cee6;
+    box-shadow: 0px 0px 0.313rem 0px #50cee6;;
 }

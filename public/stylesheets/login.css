@@ -37,7 +37,7 @@ h1
   color: black;
   text-transform: uppercase;
   font-weight: 800;
-  right: 25px;
+  right: 1.563rem;
   display: flex;
   position: relative;
 }
@@ -60,10 +60,11 @@ input
     border-width: 0.0625rem;
     font-size:1rem;
     border-color:#cccccc;
-    padding:12px; border-width:2px;
-    border-radius:13px; border-style:solid;
+    padding:0.75rem; border-width:0.125rem
+;
+    border-radius:0.813rem; border-style:solid;
     text-shadow:0px 0px 0px #2a2a2abd;
-    box-shadow: 0px 0px 5px 0px #50cee6;
+    box-shadow: 0px 0px 0.313rem 0px #50cee6;
 }
 
 .id
@@ -94,25 +95,25 @@ input
 .login {
   display: flex;
   position: relative;
-  left: 18px;
+  left: 1.125rem;
 }
 
 .inputBox {
   justify-content: center;
-  margin: 5px;
-  padding: 5px;
+  margin: 0.313rem;
+  padding: 0.313rem;
 }
 .mail
 {
     position: relative;
-    margin: 5px;
-    padding: 5px;
+    margin: 0.313rem;
+    padding: 0.313rem;
     margin-bottom: 1rem;
 }
 
 #enter
 {
-  right: 10px;
+  right: 0.625rem;
 }
 
 
@@ -123,7 +124,7 @@ justify-content: center;
 align-items: center;
 cursor: pointer;
 display: flex;
-left: -7px;
+left: -0.438rem;
 }
 
 #botaoLogin p:hover
@@ -137,7 +138,7 @@ left: -7px;
     display: flex;
     -webkit-box-pack: center;
     align-items: center;
-    border: 1px solid #50cee6;
+    border: 0.063rem solid #50cee6;
     border-radius: 1rem;
     background-color: #fefefe;
     user-select: none;
@@ -154,7 +155,7 @@ left: -7px;
     position: relative;
     flex-direction: row;
     justify-content: center;
-    right: 12px;
+    right: 0.75rem;
 }
 
 #esqueciEmail
@@ -164,7 +165,7 @@ left: -7px;
     text-decoration: underline;
     margin: 0 0.5rem;
     cursor: pointer;
-    top: 5px;
+    top: 0.313rem;
     display: flex;
     position: relative;
 }
@@ -177,16 +178,16 @@ left: -7px;
     cursor: pointer;
     position: relative;
     display: flex;
-    top: 5px;
+    top: 0.313rem;
 }
 
 #toggle {
   position: absolute;
   top: 42%;
-  right: 45px;
+  right: 2.813rem;
   transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   color: #7f60eb;
   background-size: cover;
   cursor: pointer;
