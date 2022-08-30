@@ -37,8 +37,6 @@ const searchAddress = async() => {
     } else {
         document.getElementById('address').value = 'CEP incorreto';
     }
-
-
 }
 
 document.getElementById('cep')
